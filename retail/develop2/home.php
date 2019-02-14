@@ -28,45 +28,24 @@
 	
 	$result = $mysqli->query("SELECT COUNT(*) FROM `products`");
 	$row = $result->fetch_row();
-	$productsTotal = $row[0];
+	$productsTotal = $row[0];*/
 	
-	$result = $mysqli->query("SELECT COUNT(*) FROM `recipe`");
-	$row = $result->fetch_row();
-	$recipesTotal = $row[0];*/
+	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets`");
+	$ticketsCount = $result->fetch_row();
+	$ticketsTotal = $ticketsCount[0];
 ?>
 
 <div class="row">
-    <div class="col-lg-3 col-md-6">
-        <div class="panel panel-green">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <i class="fa fa-leaf fa-5x"></i>
-                    </div>
-                    <div class="col-xs-9 text-right">
-                        <div>Ingredients</div>
-                    </div>
-                </div>
-            </div>
-            <a href="index.php?p=view&type=ing">
-                <div class="panel-footer">
-                    <span class="pull-left">View Details</span>
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                    <div class="clearfix"></div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-4 col-md-6">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-shopping-cart fa-5x"></i>
+                        <i class="fa fa-database fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge"></div>
-                        <div>Products</div>
+                        <div class="huge"><?php echo $ticketsTotal; ?></div>
+                        <div>Mantis</div>
                     </div>
                 </div>
             </div>
@@ -79,7 +58,7 @@
             </a>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-4 col-md-6">
         <div class="panel panel-yellow">
             <div class="panel-heading">
                 <div class="row">
@@ -101,7 +80,7 @@
             </a>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-4 col-md-6">
         <div class="panel panel-red">
             <div class="panel-heading">
                 <div class="row">
@@ -109,7 +88,7 @@
                         <i class="fa fa-database fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge"> </div>
+                        <div class="huge"></div>
                         <div>Warehouse</div>
                     </div>
                 </div>
@@ -138,38 +117,77 @@
     </form>
     <?php
 
-    if (isset($_POST["importMantis"])) {
+        if (isset($_POST["importMantis"])) {
 
             $fileNameMantis = $_FILES["fileMantis"]["tmp_name"];
+            $environment="Mantis";
 
             if ($_FILES["fileMantis"]["size"] > 0) {
 
                 $fileMantis = fopen($fileNameMantis, "r");
                 $i=0;
 
+
                 while (($columnMantis = fgetcsv($fileMantis, 10000, ",")) !== FALSE) {
                     if($i>0){
-                        $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity) values (
-                        '" . $columnMantis[0] . "',
-                        'Mantis',
-                        \"" . $columnMantis[12] . "\",
-                        'Bug',
-                        '" . $columnMantis[8] . "',
-                        '" . $columnMantis[4] . "',
-                        '" . $columnMantis[13] . "',
-                        '" . $columnMantis[9] . "',
-                        '','" . $columnMantis[11] . "',
-                        '" . $columnMantis[5] . "')";
-                        echo $sqlInsert;
-                        $resultMantis = mysqli_query($mysqli, $sqlInsert);
 
-                        if (! empty($resultMantis)) {
-                            $typeMantis = "success";
-                            $messageMantis = "CSV Data Imported into the Database";
-                        } else {
-                            $typeMantis = "error";
-                            $messageMantis = "Problem in Importing CSV Data";
-                        }
+                        //Take the list of IDs + environment
+                        $resultIdList = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE id ='".$columnMantis[0]."' AND environment = '".$environment."'");
+                        $ticketsIdCount = $resultIdList->fetch_row();
+                        $ticketsIdTotal = $ticketsIdCount[0];
+
+
+                        $resultIdList = $mysqli->query("SELECT COUNT(*) FROM `tickets`");
+                        $ticketsIdCount = $resultIdList->fetch_row();
+                        $ticketsIdTotal = $ticketsIdCount[0];
+
+                        if($ticketsIdTotal[0]=0){
+                            $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity) values (
+                            '" . $columnMantis[0] . "',
+                            '".$environment."',
+                            \"" . $columnMantis[12] . "\",
+                            'Bug',
+                            '" . $columnMantis[8] . "',
+                            '" . $columnMantis[4] . "',
+                            '" . $columnMantis[13] . "',
+                            '" . $columnMantis[9] . "',
+                            '" . $columnMantis[16] . "',
+                            '','" . $columnMantis[11] . "',
+                            '" . $columnMantis[5] . "')";
+                            $resultMantis = mysqli_query($mysqli, $sqlInsert);
+
+                            if (! empty($resultMantis)) {
+                                $typeMantis = "success";
+                                $messageMantis = "CSV Data Imported into the Database";
+                            } else {
+                                $typeMantis = "error";
+                                $messageMantis = "Problem in Importing CSV Data";
+                            }
+                         }
+                         else{
+                            $sqlUpdate = "UPDATE tickets
+                            SET id = '" . $columnMantis[0] . "',
+                            environment'".$environment."',
+                            summary = \"" . $columnMantis[12] . "\",
+                            category = 'Bug',
+                            owner = '" . $columnMantis[8] . "',
+                            priority = '" . $columnMantis[4] . "',
+                            status = '" . $columnMantis[13] . "',
+                            date_submitted ='" . $columnMantis[9] . "',
+                            due_date ='" . $columnMantis[16] . "',
+                            updated = '','" . $columnMantis[11] . "',
+                            severity'" . $columnMantis[5] . "'
+                            WHERE id ='".$columnMantis[0]."' AND environment = '".$environment."'";
+                            $resultMantis = mysqli_query($mysqli, $sqlUpdate);
+
+                            if (! empty($resultMantis)) {
+                                $typeMantis = "success";
+                                $messageMantis = "CSV Data Imported into the Database";
+                            } else {
+                                $typeMantis = "error";
+                                $messageMantis = "Problem in Importing CSV Data";
+                            }
+                         }
                     }
                     $i++;
                 }
