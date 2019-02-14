@@ -145,31 +145,33 @@
             if ($_FILES["fileMantis"]["size"] > 0) {
 
                 $fileMantis = fopen($fileNameMantis, "r");
+                $i=0;
 
                 while (($columnMantis = fgetcsv($fileMantis, 10000, ",")) !== FALSE) {
-                    $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity) values (
-                    '" . $columnMantis[0] . "',
-                    'Mantis',
-                    ''" . $columnMantis[12] . "'',
-                    'Bug',
-                    '" . $columnMantis[8] . "',
-                    '" . $columnMantis[4] . "',
-                    '" . $columnMantis[13] . "',
-                    '" . $columnMantis[9] . "',
-                    '','" . $columnMantis[11] . "',
-                    '" . $columnMantis[5] . "')";
-                    echo $sqlInsert;
-                    //$resultMantis = mysqli_query($mysqli, $sqlInsert);
+                    if($i>0){
+                        $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity) values (
+                        '" . $columnMantis[0] . "',
+                        'Mantis',
+                        \"" . $columnMantis[12] . "\",
+                        'Bug',
+                        '" . $columnMantis[8] . "',
+                        '" . $columnMantis[4] . "',
+                        '" . $columnMantis[13] . "',
+                        '" . $columnMantis[9] . "',
+                        '','" . $columnMantis[11] . "',
+                        '" . $columnMantis[5] . "')";
+                        echo $sqlInsert;
+                        $resultMantis = mysqli_query($mysqli, $sqlInsert);
 
-                    if (! empty($resultMantis)) {
-                    echo "pippo";
-                        $typeMantis = "success";
-                        $messageMantis = "CSV Data Imported into the Database";
-                    } else {
-                    echo "pippa";
-                        $typeMantis = "error";
-                        $messageMantis = "Problem in Importing CSV Data";
+                        if (! empty($resultMantis)) {
+                            $typeMantis = "success";
+                            $messageMantis = "CSV Data Imported into the Database";
+                        } else {
+                            $typeMantis = "error";
+                            $messageMantis = "Problem in Importing CSV Data";
+                        }
                     }
+                    $i++;
                 }
             }
         }
