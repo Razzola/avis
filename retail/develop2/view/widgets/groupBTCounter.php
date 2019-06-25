@@ -11,7 +11,7 @@
                     $mysqli = new mysqli("localhost", "root", "", "fca_pm");
                     $result = $mysqli->query("SELECT groups, COUNT(*) FROM users a
                                               INNER JOIN tickets b ON a.user=b.assigned_to
-                                              WHERE environment = 'Mantis'
+                                              WHERE environment = 'BugTracker'
                                               GROUP BY groups");
                     $row = $result->fetch_row();
 

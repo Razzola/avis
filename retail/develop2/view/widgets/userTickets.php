@@ -2,24 +2,21 @@
         <table class="table table-bordered table-hover table-striped">
             <thead>
                 <tr>
-                    <th>Group</th>
-                    <th>Total</th>
+                    <th>ID</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                     $mysqli = new mysqli("localhost", "root", "", "fca_pm");
-                    $result = $mysqli->query("SELECT groups, COUNT(*) FROM users a
-                                              INNER JOIN tickets b ON a.user=b.assigned_to
-                                              WHERE environment = 'Mantis'
-                                              GROUP BY groups");
+                    $stringQuery="SELECT id FROM tickets WHERE assigned_to='".$user."'";
+                    echo $stringQuery;
+                    $result = $mysqli->query("SELECT id FROM tickets WHERE assigned_to='".$user."'");
                     $row = $result->fetch_row();
 
                     while ( $row != null ) {
                     ?>
                     <tr>
-                        <td><a href="index.php?p=view&type=<?php echo $type;?>&team=<?php echo $row[0]; ?>&perimeter=Group"><?php echo $row[0];?> </a></td>
-                    <td><?php echo $row[1]; ?></td>
+                        <td><a href="https://triplesensereply.mantishub.io/view.php?id=<?php echo $row[0]; ?>" target="_blank"><?php echo $row[0]; ?></td>
                     </tr>
                     <?php
                         $row = $result->fetch_row();

@@ -12,10 +12,31 @@
             case 'BT':
                 $name = 'BugTracker';
                 break;
-            case 'Total':
-                $name= 'Total';
+            case 'All':
+                $name= 'All';
+                break;
+
+            case 'Team':
+                $name = 'Team';
                 break;
         }
+    }
+    if ( isset($_GET['team']) ) {
+            $team = $_GET['team'];
+     }else{
+            $team = null;
+    }
+
+    if ( isset($_GET['user']) ) {
+            $user = $_GET['user'];
+     }else{
+            $user = null;
+    }
+
+    if ( isset($_GET['perimeter']) ) {
+            $perimeter = $_GET['perimeter'];
+     }else{
+            $perimeter = null;
     }
 
 ?>
@@ -27,19 +48,24 @@
         <!--div class="text-right">
              <a href="index.php?p=create&type=<?php echo $type;?>">Insert new <?php echo $name;?> 
                <i class="fa fa-arrow-circle-right"></i></a>
-         </div--!>
-        <br/>
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped">
-                    <thead>
-                        <tr>
-                            <th>Group</th>
-                            <th>Opened tickets</th>
-                        </tr>
-                    </thead>
-                        <?php include "/view/widgets/groupMantisCounter.php";?>
-                    </tbody>
-                </table>
+        </div--!>
+        <h3>OVERALL</h3>
+                <?php
+                if  (!isset($perimeter)){
+                    if($type=='Mantis'){
+                        include "view/widgets/groupMantisCounter.php";
+                    }elseif($type=='BugTracker'){
+                        include "view/widgets/groupBTCounter.php";
+                    }elseif($type=='All'){
+                        include "view/widgets/groupAllCounter.php";
+                    }
+                }elseif($perimeter=='Group'){
+                    include "view/widgets/groupTeamCounter.php";
+                }elseif($perimeter=='User'){
+                    include "view/widgets/userTickets.php";
+                }
+
+                ?>
             </div>
             <!--div class="text-right">
                 <a href="index.php?p=create&type=<?php echo $type;?>">Insert new <?php echo $name;?>

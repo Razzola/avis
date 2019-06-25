@@ -24,16 +24,18 @@
                         $sqlInsert = "INSERT into tickets (id,environment,summary,category,priority,status,date_submitted,due_date,updated,assigned_to,reporter) values (
                         '" . $columnBT[0] . "',
                         '".$environment."',
-                        \"" . $columnBT[7] . "\",
-                        '" . $columnBT[4] . "',
-                        '" . $columnBT[5] . "',
+                        '" . mysqli_real_escape_string($mysqli, $columnBT[10]) . "',
                         '" . $columnBT[6] . "',
-                        '" . $columnBT[1] . "',
-                        '" . $columnBT[2] . "',
-                        '" . $columnBT[3] . "',
-                        '',
-                        '')";
-                        echo $sqlInsert;
+                        '" . $columnBT[7] . "',
+                        '" . substr($columnBT[7],2) . "',
+                        '" . $columnBT[8] . "',
+                        '" . date("Y-m-d",strtotime($columnBT[1])) . "',
+                        '" . date("Y-m-d",strtotime($columnBT[2])) . "',
+                        '" . date("Y-m-d",strtotime($columnBT[3])) . "',
+                        '" . $columnBT[5] . "',
+                        '" . $columnBT[9] . "')";
+                        //echo $columnBT[0]."<br/>";
+                        echo $sqlInsert."<br/>";
                         $resultBT = mysqli_query($mysqli, $sqlInsert);
 
                         if (! empty($resultBT)) {
@@ -46,17 +48,19 @@
                      }
                      else{
                         $sqlUpdate = "UPDATE tickets
-                        SET summary = \"" . $columnBT[7] . "\",
-                        category = '" . $columnBT[4] . "',
-                        priority = '" . $columnBT[5] . "',
-                        status = '" . $columnBT[6] . "',
-                        date_submitted ='" . $columnBT[1] . "',
-                        due_date ='" . $columnBT[2] . "',
-                        updated = '" . $columnBT[3] . "',
-                        assigned_to = '',
-                        reporter = ''
+                        SET summary = '" . mysqli_real_escape_string($mysqli, $columnBT[10]) . "',
+                        category = '" . $columnBT[6] . "',
+                        priority = '" . $columnBT[7] . "',
+                        severity = '" . substr($columnBT[7],2) . "',
+                        status = '" . $columnBT[8] . "',
+                        date_submitted ='" . date("Y-m-d",strtotime($columnBT[1])) . "',
+                        due_date ='" . date("Y-m-d",strtotime($columnBT[2])) . "',
+                        updated = '" . date("Y-m-d",strtotime($columnBT[3])) . "',
+                        assigned_to = '" . $columnBT[5] . "',
+                        reporter = '" . $columnBT[9] . "'
                         WHERE id ='".$columnBT[0]."' AND environment = '".$environment."'";
-                        echo $sqlUpdate;
+                        //echo $columnBT[2];
+                        echo $sqlUpdate."<br/>";
                         $resultBT = mysqli_query($mysqli, $sqlUpdate);
 
                         if (! empty($resultBT)) {

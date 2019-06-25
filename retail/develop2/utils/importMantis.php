@@ -25,10 +25,10 @@
                     //$ticketsIdTotal = $ticketsIdCount[0];
 
                     if($ticketsIdTotal[0]==0){
-                        $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity,assigned_to,reporter) values (
+                        $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity,assigned_to,reporter, quotation) values (
                         '" . $columnMantis[0] . "',
                         '".$environment."',
-                        \"" . $columnMantis[12] . "\",
+                        '" . mysqli_real_escape_string($mysqli, $columnMantis[12]) . "',
                         'Bug',
                         '" . $columnMantis[8] . "',
                         '" . $columnMantis[4] . "',
@@ -38,8 +38,9 @@
                         '',
                         '" . $columnMantis[11] . "',
                         '" . $columnMantis[5] . "'
-                        '" . $columnMantis[3] . "'
-                        '" . $columnMantis[2] . "')";
+                        '" . ltrim($columnMantis[3],'.') . "'
+                        '" . $columnMantis[2] . "',
+                         '" . $columnMantis[17] . "')";
                         $resultMantis = mysqli_query($mysqli, $sqlInsert);
 
                         if (! empty($resultMantis)) {
@@ -52,7 +53,7 @@
                      }
                      else{
                         $sqlUpdate = "UPDATE tickets
-                        SET summary = \"" . $columnMantis[12] . "\",
+                        SET summary = '" . mysqli_real_escape_string($mysqli, $columnMantis[12]) . "',
                         category = 'Bug',
                         owner = '" . $columnMantis[8] . "',
                         priority = '" . $columnMantis[4] . "',
@@ -61,10 +62,11 @@
                         due_date ='" . $columnMantis[16] . "',
                         updated = '" . $columnMantis[11] . "',
                         severity = '" . $columnMantis[5] . "',
-                        assigned_to = '" . $columnMantis[3] . "',
-                        reporter = '" . $columnMantis[2] . "'
+                        assigned_to = '" . str_replace(".","",$columnMantis[3]) . "',
+                        reporter = '" . $columnMantis[2] . "',
+                        quotation = '" . $columnMantis[17] . "'
                         WHERE id ='".$columnMantis[0]."' AND environment = '".$environment."'";
-                        //echo $sqlUpdate;
+                        echo $sqlUpdate;
                         $resultMantis = mysqli_query($mysqli, $sqlUpdate);
 
                         if (! empty($resultMantis)) {

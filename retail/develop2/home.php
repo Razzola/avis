@@ -1,8 +1,8 @@
 <?php
-
+    include "dictionary/all.php";
 	$mysqli = new mysqli("localhost", "root", "", "fca_pm");
 
-	
+
 	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE environment='Mantis'AND STATUS NOT IN ('resolved','closed')");
 	$ticketsCount = $result->fetch_row();
 	$ticketsMantisTotal = $ticketsCount[0];
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <a href="index.php?p=view&type=Mantis">
+            <a href="index.php?p=view&type=<?php echo $mantis;?>">
                 <div class="panel-footer">
                     <span class="pull-left">View Details</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <a href="index.php?p=view&type=BT">
+            <a href="index.php?p=view&type=<?php echo $bugtracker;?>">
                 <div class="panel-footer">
                     <span class="pull-left">View Details</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -66,12 +66,12 @@
                         <i class="fa fa-database fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge"><?php echo $ticketsMantisTotal+$ticketsBTTotal;; ?></div>
+                        <div class="huge"><?php echo $ticketsMantisTotal+$ticketsBTTotal; ?></div>
                         <div>Total</div>
                     </div>
                 </div>
             </div>
-            <a href="index.php?p=view&type=wh">
+            <a href="index.php?p=view&type=<?php echo $all;?>">
                 <div class="panel-footer">
                     <span class="pull-left">View Details</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
