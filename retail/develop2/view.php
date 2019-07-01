@@ -51,13 +51,11 @@
         </div--!>
         <h3>OVERALL</h3>
                 <?php
+                $envFilter='';
                 if  (!isset($perimeter)){
-                    if($type=='Mantis'){
-                        include "view/widgets/groupMantisCounter.php";
-                    }elseif($type=='BugTracker'){
-                        include "view/widgets/groupBTCounter.php";
-                    }elseif($type=='All'){
-                        include "view/widgets/groupAllCounter.php";
+                    include "view/widgets/groupCounter.php";
+                    if($type!='All'){
+                        $envFilter='AND environment ='.$type;
                     }
                 }elseif($perimeter=='Group'){
                     include "view/widgets/groupTeamCounter.php";

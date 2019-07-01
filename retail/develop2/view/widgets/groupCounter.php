@@ -24,7 +24,7 @@
                             }
                             $firstRow=$firstRow.$column[0];
                             //Building macro query
-                            $macroQuery=$macroQuery." LEFT JOIN (SELECT groups, COUNT(*) AS ".$column[0]." FROM users a LEFT JOIN tickets b ON a.user=b.assigned_to WHERE severity='".$column[0]."' GROUP BY groups) ".$column[0]." ON a.groups=".$column[0].".groups";
+                            $macroQuery=$macroQuery." LEFT JOIN (SELECT groups, COUNT(*) AS ".$column[0]." FROM users a LEFT JOIN tickets b ON a.user=b.assigned_to WHERE severity='".$column[0]."' AND status!= 'closed' ".$envFilter." GROUP BY groups) ".$column[0]." ON a.groups=".$column[0].".groups";
                             //
                             $i++;
                             ?>
@@ -43,7 +43,7 @@
 
 
                     $firstRow="SELECT a.GROUPS,".$firstRow." FROM ";
-                    $totTicketsByType="(SELECT groups AS GROUPS, COUNT(*) AS TOTAL FROM users a RIGHT JOIN tickets b ON a.user=b.assigned_to ".$filterByType."GROUP BY groups) a";
+                    $totTicketsByType="(SELECT groups AS GROUPS, COUNT(*) AS TOTAL FROM users a RIGHT JOIN tickets b ON a.user=b.assigned_to ".$filterByType." AND status!= 'closed' ".$envFilter." GROUP BY groups) a";
                     $ultimateQuery=$firstRow.$totTicketsByType.$macroQuery;
                     //echo $ultimateQuery;
                     $result = $mysqli->query($ultimateQuery);

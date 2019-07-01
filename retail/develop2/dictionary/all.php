@@ -1,6 +1,8 @@
 <?php
     $mantis='Mantis';
     $bugtracker='BugTracker';
+    $btUrl='http://bugtracker.fiatauto.com/';
+    $mantisUrl='https://triplesensereply.mantishub.io/';
     $all='All';
     $group='group';
     //field used to query tickets and render tables
