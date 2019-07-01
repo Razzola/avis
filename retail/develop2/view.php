@@ -52,11 +52,11 @@
         <h3>OVERALL</h3>
                 <?php
                 $envFilter='';
+                if($type!='All'){
+                    $envFilter="AND environment ='".$type."'";
+                }
                 if  (!isset($perimeter)){
                     include "view/widgets/groupCounter.php";
-                    if($type!='All'){
-                        $envFilter='AND environment ='.$type;
-                    }
                 }elseif($perimeter=='Group'){
                     include "view/widgets/groupTeamCounter.php";
                 }elseif($perimeter=='User'){
