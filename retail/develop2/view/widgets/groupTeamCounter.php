@@ -4,7 +4,6 @@
                 <tr>
                     <th>Users</th>
                     <?php
-                        $mysqli = new mysqli("localhost", "root", "", "fca_pm");
                         //Building column for all severities
                         $groups= $mysqli->query("SELECT severity FROM tickets GROUP BY severity");
                         $column = $groups->fetch_row();
@@ -17,7 +16,7 @@
                             }
                             $firstRow=$firstRow.$column[0];
                             //Building macro query
-                            $macroQuery=$macroQuery." LEFT JOIN (SELECT a.user, COUNT(*) AS ".$column[0]." FROM users a LEFT JOIN tickets b ON a.user=b.assigned_to WHERE severity='".$column[0]."' ".$envFilter." AND status!= 'closed' GROUP BY a.user) ".$column[0]." ON a.user=".$column[0].".user";
+                            $macroQuery=$macroQuery." LEFT JOIN (SELECT a.user, COUNT(*) AS ".$column[0]." FROM users a LEFT JOIN tickets b ON a.user=b.assigned_to WHERE severity='".$column[0]."' ".$envFilter." AND ".$exclude_closed." GROUP BY a.user) ".$column[0]." ON a.user=".$column[0].".user";
                             //
                             $i++;
                             ?>
@@ -36,7 +35,7 @@
 
 
                         $firstRow="SELECT a.USER,".$firstRow." FROM ";
-                        $totTicketsByType="(SELECT a.user AS USER, COUNT(*) AS TOTAL FROM users a RIGHT JOIN tickets b ON a.user=b.assigned_to  WHERE a.groups='".$team."' ".$envFilter." AND status!= 'closed' GROUP BY a.user) a";
+                        $totTicketsByType="(SELECT a.user AS USER, COUNT(*) AS TOTAL FROM users a RIGHT JOIN tickets b ON a.user=b.assigned_to  WHERE a.groups='".$team."' ".$envFilter." AND ".$exclude_closed." GROUP BY a.user) a";
                         $ultimateQuery=$firstRow.$totTicketsByType.$macroQuery;
                         $result = $mysqli->query($ultimateQuery);
                         $row = $result->fetch_row();

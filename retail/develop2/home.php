@@ -1,14 +1,12 @@
 <?php
     include "dictionary/all.php";
-	$mysqli = new mysqli("localhost", "root", "", "fca_pm");
 
 
-	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE environment='Mantis'AND STATUS NOT IN ('resolved','closed')");
+	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE environment='Mantis'AND".$exclude_closed);
 	$ticketsCount = $result->fetch_row();
 	$ticketsMantisTotal = $ticketsCount[0];
 
-
-	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE environment='BugTracker' AND STATUS NOT IN ('resolved','closed')");
+	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE environment='BugTracker' AND".$exclude_closed);
 	$ticketsCount = $result->fetch_row();
 	$ticketsBTTotal = $ticketsCount[0];
 ?>

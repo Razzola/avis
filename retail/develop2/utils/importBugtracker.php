@@ -18,8 +18,8 @@
                     $resultIdListBT = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE id ='".$columnBT[0]."' AND environment = '".$environment."'");
                     $ticketsIdCountBT = $resultIdListBT->fetch_row();
                     $ticketsIdTotalBT = $ticketsIdCountBT[0];
-
-                    echo $ticketsIdCountBT[0];
+                    //echo "SELECT COUNT(*) FROM `tickets` WHERE id ='".$columnBT[0]."' AND environment = '".$environment."'";
+                    //echo $ticketsIdCountBT[0];
                     if($ticketsIdCountBT[0]==0){
                         $sqlInsert = "INSERT into tickets (id,environment,summary,category,priority,status,date_submitted,due_date,updated,assigned_to,reporter) values (
                         '" . $columnBT[0] . "',
@@ -32,7 +32,7 @@
                         '" . date("Y-m-d",strtotime($columnBT[1])) . "',
                         '" . date("Y-m-d",strtotime($columnBT[2])) . "',
                         '" . date("Y-m-d",strtotime($columnBT[3])) . "',
-                        '" . $columnBT[5] . "',
+                        '" . str_replace(".","",$columnBT[5]) . "',
                         '" . $columnBT[9] . "')";
                         //echo $columnBT[0]."<br/>";
                         echo $sqlInsert."<br/>";
@@ -56,7 +56,7 @@
                         date_submitted ='" . date("Y-m-d",strtotime($columnBT[1])) . "',
                         due_date ='" . date("Y-m-d",strtotime($columnBT[2])) . "',
                         updated = '" . date("Y-m-d",strtotime($columnBT[3])) . "',
-                        assigned_to = '" . $columnBT[5] . "',
+                        assigned_to = '" . str_replace(".","",$columnBT[5]) . "',
                         reporter = '" . $columnBT[9] . "'
                         WHERE id ='".$columnBT[0]."' AND environment = '".$environment."'";
                         //echo $columnBT[2];

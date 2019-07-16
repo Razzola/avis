@@ -1,19 +1,11 @@
 <div class="table-responsive col-lg-12 col-md-12">
-        <?php
-            $mysqli = new mysqli("localhost", "root", "", "fca_pm");
-                if($type!='All'){
-                    $filterByType= "WHERE  environment='".$type."'";
-                }else{
-                    $filterByType="";
-                }
-        ?>
         <table class="table table-bordered table-hover table-striped">
             <thead>
                 <tr>
                     <th>Group</th>
                     <?php
                         //Building column for all severities
-                        $groups= $mysqli->query("SELECT severity FROM tickets GROUP BY severity");
+                        $groups= $mysqli->query("SELECT severity FROM tickets WHERE ".$exclude_closed."GROUP BY severity");
                         $column = $groups->fetch_row();
                         $firstRow="";                   //init first row query
                         $i=0;
@@ -24,7 +16,7 @@
                             }
                             $firstRow=$firstRow.$column[0];
                             //Building macro query
-                            $macroQuery=$macroQuery." LEFT JOIN (SELECT groups, COUNT(*) AS ".$column[0]." FROM users a LEFT JOIN tickets b ON a.user=b.assigned_to WHERE severity='".$column[0]."' AND status!= 'closed' ".$envFilter." GROUP BY groups) ".$column[0]." ON a.groups=".$column[0].".groups";
+                            $macroQuery=$macroQuery." LEFT JOIN (SELECT groups, COUNT(*) AS ".$column[0]." FROM users a LEFT JOIN tickets b ON a.user=b.assigned_to WHERE severity='".$column[0]."'  ".$envFilter." AND ".$exclude_closed."GROUP BY groups) ".$column[0]." ON a.groups=".$column[0].".groups";
                             //
                             $i++;
                             ?>
@@ -43,7 +35,7 @@
 
 
                     $firstRow="SELECT a.GROUPS,".$firstRow." FROM ";
-                    $totTicketsByType="(SELECT groups AS GROUPS, COUNT(*) AS TOTAL FROM users a RIGHT JOIN tickets b ON a.user=b.assigned_to ".$filterByType." AND status!= 'closed' ".$envFilter." GROUP BY groups) a";
+                    $totTicketsByType="(SELECT groups AS GROUPS, COUNT(*) AS TOTAL FROM users a RIGHT JOIN tickets b ON a.user=b.assigned_to ".$filterByType."  ".$envFilter." AND ".$exclude_closed."GROUP BY groups) a";
                     $ultimateQuery=$firstRow.$totTicketsByType.$macroQuery;
                     $result = $mysqli->query($ultimateQuery);
                     $row = $result->fetch_row();

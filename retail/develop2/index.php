@@ -21,7 +21,16 @@ if ( isset($_GET['type']) ) {
 	}
 	
 }
+$mysqli = new mysqli("localhost", "root", "", "fca_pm");
+
+if($type!='All'){
+    $filterByType= "WHERE  environment='".$type."'";
+}else{
+    $filterByType="";
+}
 $root="C:/xampp/htdocs/beerecipe/retail/develop2";
+$exclude_closed=" STATUS NOT IN ('resolved','closed')";
+
 include "dictionary/all.php";
 ?>
 <!DOCTYPE html>
@@ -217,6 +226,7 @@ include "dictionary/all.php";
     </div>
     <!-- /#wrapper -->
 
+	$mysqli->close();
 
 </body>
 

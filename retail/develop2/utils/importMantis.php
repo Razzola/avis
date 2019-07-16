@@ -25,7 +25,7 @@
                     //$ticketsIdTotal = $ticketsIdCount[0];
 
                     if($ticketsIdTotal[0]==0){
-                        $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity,assigned_to,reporter, quotation) values (
+                        $sqlInsert = "INSERT into tickets (id,environment,summary,category,owner,priority,status,date_submitted,due_date,updated,severity,assigned_to,reporter, quotation,project) values (
                         '" . $columnMantis[0] . "',
                         '".$environment."',
                         '" . mysqli_real_escape_string($mysqli, $columnMantis[12]) . "',
@@ -35,14 +35,14 @@
                         '" . $columnMantis[13] . "',
                         '" . $columnMantis[9] . "',
                         '" . $columnMantis[16] . "',
-                        '',
                         '" . $columnMantis[11] . "',
-                        '" . $columnMantis[5] . "'
-                        '" . ltrim($columnMantis[3],'.') . "'
+                        '" . $columnMantis[5] . "',
+                        '" . str_replace(".","",$columnMantis[3]) . "',
                         '" . $columnMantis[2] . "',
-                         '" . $columnMantis[17] . "')";
+                         '" . $columnMantis[17] . "',
+                        '" . $columnMantis[1] . "')";
                         $resultMantis = mysqli_query($mysqli, $sqlInsert);
-
+                        echo $sqlInsert;
                         if (! empty($resultMantis)) {
                             $typeMantis = "success";
                             $messageMantis = "CSV Data Imported into the Database";
@@ -50,8 +50,10 @@
                             $typeMantis = "error";
                             $messageMantis = "Problem in Importing CSV Data";
                         }
+                        if (!$resultMantis)
+                            echo mysqli_error($mysqli)."<br/>";
                      }
-                     else{
+                    else{
                         $sqlUpdate = "UPDATE tickets
                         SET summary = '" . mysqli_real_escape_string($mysqli, $columnMantis[12]) . "',
                         category = 'Bug',
@@ -64,9 +66,10 @@
                         severity = '" . $columnMantis[5] . "',
                         assigned_to = '" . str_replace(".","",$columnMantis[3]) . "',
                         reporter = '" . $columnMantis[2] . "',
-                        quotation = '" . $columnMantis[17] . "'
+                        quotation = '" . $columnMantis[17] . "',
+                        project = '" . $columnMantis[1] . "'
                         WHERE id ='".$columnMantis[0]."' AND environment = '".$environment."'";
-                        echo $sqlUpdate;
+                        //echo $sqlUpdate;
                         $resultMantis = mysqli_query($mysqli, $sqlUpdate);
 
                         if (! empty($resultMantis)) {

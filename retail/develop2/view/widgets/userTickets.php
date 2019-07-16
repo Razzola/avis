@@ -1,4 +1,4 @@
-<div class="table-responsive col-lg-4 col-md-6">
+<div class="table-responsive col-lg-6 col-md-6">
         <table id="dtTable" class="table table-striped table-bordered table-sm">
             <thead>
                 <tr>
@@ -10,9 +10,7 @@
             </thead>
             <tbody>
                 <?php
-                    $mysqli = new mysqli("localhost", "root", "", "fca_pm");
-                    $stringQuery="SELECT id,environment,summary,reporter FROM tickets WHERE assigned_to='".$user."' AND status!= 'closed'";
-                    echo $stringQuery;
+                    $stringQuery="SELECT id,environment,summary,reporter FROM tickets ".$filterByType."AND assigned_to='".$user."' AND ".$exclude_closed;
                     $result = $mysqli->query($stringQuery);
                     $row = $result->fetch_row();
 
