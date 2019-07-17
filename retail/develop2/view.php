@@ -50,7 +50,12 @@
              <a href="index.php?p=create&type=<?php echo $type;?>">Insert new <?php echo $name;?> 
                <i class="fa fa-arrow-circle-right"></i></a>
         </div--!>
-        <h3>OVERALL</h3>
+
+            <h3>OVERALL</h3>
+            <div class="text-center">
+                <a href="javascript:history.back()">< Back</a>
+            </div>
+            <br/>
                 <?php
                 $envFilter='';
                 if($type!='All'){
@@ -60,16 +65,19 @@
                     include "view/widgets/groupCounter.php";
                 }elseif($perimeter=='Group'){
                     include "view/widgets/groupTeamCounter.php";
+                    include "view/widgets/groupTickets.php";
                 }elseif($perimeter=='User'){
                     include "view/widgets/userTickets.php";
                 }
 
                 ?>
+
+            <div class="text-center">
+                <a href="javascript:history.back()">< Back</a>
             </div>
-            <!--div class="text-right">
-                <a href="index.php?p=create&type=<?php echo $type;?>">Insert new <?php echo $name;?>
-                  <i class="fa fa-arrow-circle-right"></i></a>
-            </div--!>
+
+         </div>
+
         </div>
     </div>
 </div>

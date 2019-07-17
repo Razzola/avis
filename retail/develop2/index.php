@@ -58,6 +58,13 @@ include "dictionary/all.php";
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.js"></script>
+    <script src="js/custom.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -92,7 +99,7 @@ include "dictionary/all.php";
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Beerecipe</a>
+                <a class="navbar-brand" href="index.php">FCA Utilities</a>
             </div>
             <!-- Top Menu Items -->
             
@@ -100,93 +107,33 @@ include "dictionary/all.php";
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                    	<a href="javascript:;" data-toggle="collapse" data-target="#cat">
-                            <i class="fa fa-fw fa-folder"></i>
-                            Category
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="cat" class="collapse">
-                            <li>
-                                <a href="index.php?p=create&type=cat"><i class="fa fa-fw fa-plus"></i>Create</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=view&type=cat"><i class="fa fa-fw fa-eye"></i>View</a>
-                            </li>
-                        </ul>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#ing">
-                            <i class="fa fa-fw fa-leaf"></i>
-                            Ingredients
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="ing" class="collapse">
-                            <li>
-                                <a href="index.php?p=create&type=ing"><i class="fa fa-fw fa-plus"></i>Create</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=view&type=ing"><i class="fa fa-fw fa-eye"></i>View</a>
-                            </li>
-                        </ul>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#prd">
-                            <i class="fa fa-fw fa-shopping-cart"></i>
-                            Products
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="prd" class="collapse">
-                            <li>
-                                <a href="index.php?p=create&type=prd"><i class="fa fa-fw fa-plus"></i>Create</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=view&type=prd"><i class="fa fa-fw fa-eye"></i>View</a>
-                            </li>
-                        </ul>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#rec">
-                            <i class="fa fa-fw fa-book"></i>
-                            Recipe
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="rec" class="collapse">
-                            <li>
-                                <a href="index.php?p=create&type=rec"><i class="fa fa-fw fa-plus"></i>Create</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=view&type=rec"><i class="fa fa-fw fa-eye"></i>View</a>
-                            </li>
-                        </ul>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#wh">
-                            <i class="fa fa-fw fa-archive"></i>
-                            Warehouse
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="wh" class="collapse">
-                            <li>
-                                <a href="index.php?p=view&type=wh"><i class="fa fa-fw fa-eye"></i>View</a>
-                            </li>
-                        </ul>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#ca">
-                            <i class="fa fa-fw fa-calculator"></i>
-                            Calculate
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="ca" class="collapse">
-                            <li>
-                                <a href="index.php?p=calculator"><i class="fa fa-fw fa-magic"></i>AAU vs weight</a>
-                            </li>
-                        </ul>
-                        
-                        <a href="javascript:;" data-toggle="collapse" data-target="#diary">
-                            <i class="fa fa-calendar-o"></i>
-                            Diary
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="diary" class="collapse">
-                            <li>
-                                <a href="index.php?p=create&type=di"><i class="fa fa-fw fa-plus"></i>Create</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=view&type=di"><i class="fa fa-fw fa-eye"></i>View</a>
-                            </li>
-                        </ul>
-                    </li>
+                        <?php
+                            $groups= $mysqli->query("SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups");
+                            //echo "SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups";
+                            $group = $groups->fetch_row();
+                            while ( $group  != null ) {
+                            ?>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#<?php echo $group[0]?>">
+                                <i class="fa fa-fw fa-folder"></i>
+                                <?php echo $group[0]?>
+                                <i class="fa fa-fw fa-caret-down"></i>
+                            </a>
+                            <ul id="<?php echo $group[0]?>" class="collapse">
+                                <li>
+                                    <a href="index.php?p=view&amp;type=<?php echo $all?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $all?></a>
+                                </li>
+                                <li>
+                                    <a href="index.php?p=view&amp;type=<?php echo $mantis?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $mantis?></a>
+                                </li>
+                                <li>
+                                    <a href="index.php?p=view&amp;type=<?php echo $bugtracker?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $bugtracker?></a>
+                                </li>
+                            </ul>
+                         <?php
+                            $group = $groups->fetch_row();
+                            }
+                        ?>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -225,8 +172,9 @@ include "dictionary/all.php";
 
     </div>
     <!-- /#wrapper -->
-
+<?php
 	$mysqli->close();
+?>
 
 </body>
 
