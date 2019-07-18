@@ -2,10 +2,10 @@
         <table id="dtTable" class="table table-striped table-bordered table-sm">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Environment</th>
-                    <th>Summary</th>
-                    <th>Severity</th>
+                    <th class="th-sm">ID</th>
+                    <th class="th-sm">Environment</th>
+                    <th class="th-sm">Summary</th>
+                    <th class="th-sm">Severity</th>
                 </tr>
             </thead>
             <tbody>

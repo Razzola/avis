@@ -51,6 +51,7 @@ include "dictionary/all.php";
 
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/dataTables.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
@@ -60,10 +61,8 @@ include "dictionary/all.php";
 
 
     <!-- Custom JS -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script src="js/dataTables.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/dataTables.js" defer></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -172,6 +171,9 @@ include "dictionary/all.php";
 
     </div>
     <!-- /#wrapper -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap4.min.js"></script>
 <?php
 	$mysqli->close();
 ?>
