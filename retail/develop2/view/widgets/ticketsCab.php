@@ -3,14 +3,16 @@
             <thead>
                 <tr>
                     <th class="th-sm">ID</th>
+                    <th class="th-sm">RFC</th>
                     <th class="th-sm">Environment</th>
-                    <th class="th-sm">Summary</th>
-                    <th class="th-sm">Severity</th>
+                    <th class="th-sm">Source ID</th>
+                    <th class="th-sm">Due date</th>
+                    <th class="th-sm">Prod Date</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $stringQuery="SELECT id,environment,summary,severity FROM tickets ".$filterByType."AND assigned_to='".$user."' AND ".$exclude_closed;
+                    $stringQuery="SELECT id,rfc,b.environment,source_id,due_date,prod_date FROM tickets a RIGHT JOIN cab b ON a.id=b.source_id WHERE due_date!=prod_date";
                     $result = $mysqli->query($stringQuery);
                     $row = $result->fetch_row();
 
@@ -27,6 +29,8 @@
                         <td><?php echo $row[1]; ?></td>
                         <td><?php echo $row[2]; ?></td>
                         <td><?php echo $row[3]; ?></td>
+                        <td><?php echo $row[4]; ?></td>
+                        <td><?php echo $row[5]; ?></td>
                     </tr>
                     <?php
                         $row = $result->fetch_row();
@@ -34,7 +38,5 @@
                     ?>
             </tbody>
         </table>
-
-
 
  </div>

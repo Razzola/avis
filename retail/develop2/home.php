@@ -105,9 +105,26 @@
         </div>
         <div id="labelError"></div>
     </form>
+
+
+    <form class="col-lg-3 col-md-6" action="" method="post" name="uploadCSV"
+        enctype="multipart/form-data">
+        <div class="input-row">
+            <h4>Choose CAB CSV</h4>
+            <input
+                type="file" name="fileCAB" id="fileCAB" accept=".csv">
+            <button type="submit" id="submit" name="importCAB"
+                class="btn btn-primary">Import</button>
+            <br />
+
+        </div>
+        <div id="labelError"></div>
+    </form>
+
     <?php
 
         include "utils/importMantis.php";
         include "utils/importBugTracker.php";
+        include "utils/importCAB.php";
     ?>
 </div>

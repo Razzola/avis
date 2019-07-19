@@ -61,6 +61,7 @@
                 if($type!='All'){
                     $envFilter="AND environment ='".$type."'";
                 }
+
                 if  (!isset($perimeter)){
                     include "view/widgets/groupCounter.php";
                 }elseif($perimeter=='Group'){
@@ -81,5 +82,3 @@
         </div>
     </div>
 </div>
-    <!-- Custom JavaScript -->
-    <script src="js/custom.js"></script>

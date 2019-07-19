@@ -112,26 +112,36 @@ include "dictionary/all.php";
                             $group = $groups->fetch_row();
                             while ( $group  != null ) {
                             ?>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#<?php echo $group[0]?>">
-                                <i class="fa fa-fw fa-folder"></i>
-                                <?php echo $group[0]?>
-                                <i class="fa fa-fw fa-caret-down"></i>
-                            </a>
-                            <ul id="<?php echo $group[0]?>" class="collapse">
-                                <li>
-                                    <a href="index.php?p=view&amp;type=<?php echo $all?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $all?></a>
-                                </li>
-                                <li>
-                                    <a href="index.php?p=view&amp;type=<?php echo $mantis?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $mantis?></a>
-                                </li>
-                                <li>
-                                    <a href="index.php?p=view&amp;type=<?php echo $bugtracker?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $bugtracker?></a>
-                                </li>
-                            </ul>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#<?php echo $group[0]?>">
+                                    <i class="fa fa-fw fa-folder"></i>
+                                    <?php echo $group[0]?>
+                                    <i class="fa fa-fw fa-caret-down"></i>
+                                </a>
+                                <ul id="<?php echo $group[0]?>" class="collapse">
+                                    <li>
+                                        <a href="index.php?p=view&amp;type=<?php echo $all?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $all?></a>
+                                    </li>
+                                    <li>
+                                        <a href="index.php?p=view&amp;type=<?php echo $mantis?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $mantis?></a>
+                                    </li>
+                                    <li>
+                                        <a href="index.php?p=view&amp;type=<?php echo $bugtracker?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $bugtracker?></a>
+                                    </li>
+                                </ul>
                          <?php
                             $group = $groups->fetch_row();
                             }
                         ?>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#Discrepancy">
+                            <i class="fa fa-fw fa-folder"></i>
+                           Tools
+                            <i class="fa fa-fw fa-caret-down"></i>
+                        </a>
+                        <ul id="Discrepancy" class="collapse">
+                            <li>
+                                <a href="index.php?p=discrepancy"><i class="fa fa-fw fa-eye"></i>TKT Discrepancy</a>
+                            </li>
+                        </ul>
 
                 </ul>
             </div>
