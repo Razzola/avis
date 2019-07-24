@@ -21,7 +21,7 @@
                     <tr>
                         <td><a href=
                             <?php
-                            if ($row[1]==$bugtracker)
+                            if ($row[2]==$bugtracker)
                                 echo $btUrl;
                             else
                                 echo $mantisUrl;

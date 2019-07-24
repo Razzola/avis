@@ -42,7 +42,7 @@
                          '" . $columnMantis[17] . "',
                         '" . $columnMantis[1] . "')";
                         $resultMantis = mysqli_query($mysqli, $sqlInsert);
-                        echo $sqlInsert;
+                        //echo $sqlInsert;
                         if (! empty($resultMantis)) {
                             $typeMantis = "success";
                             $messageMantis = "CSV Data Imported into the Database";
