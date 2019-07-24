@@ -35,7 +35,7 @@
                         '" . str_replace(".","",$columnBT[5]) . "',
                         '" . $columnBT[9] . "')";
                         //echo $columnBT[0]."<br/>";
-                        echo $sqlInsert."<br/>";
+                        //echo $sqlInsert."<br/>";
                         $resultBT = mysqli_query($mysqli, $sqlInsert);
 
                         if (! empty($resultBT)) {
@@ -60,7 +60,7 @@
                         reporter = '" . $columnBT[9] . "'
                         WHERE id ='".$columnBT[0]."' AND environment = '".$environment."'";
                         //echo $columnBT[2];
-                        echo $sqlUpdate."<br/>";
+                        //echo $sqlUpdate."<br/>";
                         $resultBT = mysqli_query($mysqli, $sqlUpdate);
 
                         if (! empty($resultBT)) {

@@ -106,6 +106,20 @@ include "dictionary/all.php";
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
+
+                        <a href="javascript:;" data-toggle="collapse" data-target="#Discrepancy">
+                            <i class="fa fa-fw fa-plus"></i>
+                           Tools
+                            <i class="fa fa-fw fa-caret-down"></i>
+                        </a>
+                        <ul id="Discrepancy" class="collapse">
+                            <li>
+                                <a href="index.php?p=discrepancy"><i class="fa fa-fw fa-eye"></i>TKT Discrepancy</a>
+                            </li>
+                            <li>
+                                <a href="index.php?p=urls"><i class="fa fa-fw fa-eye"></i>URLs</a>
+                            </li>
+                        </ul>
                         <?php
                             $groups= $mysqli->query("SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups");
                             //echo "SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups";
@@ -132,16 +146,6 @@ include "dictionary/all.php";
                             $group = $groups->fetch_row();
                             }
                         ?>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#Discrepancy">
-                            <i class="fa fa-fw fa-folder"></i>
-                           Tools
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="Discrepancy" class="collapse">
-                            <li>
-                                <a href="index.php?p=discrepancy"><i class="fa fa-fw fa-eye"></i>TKT Discrepancy</a>
-                            </li>
-                        </ul>
 
                 </ul>
             </div>
