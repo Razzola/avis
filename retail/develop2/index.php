@@ -44,7 +44,7 @@ include "dictionary/all.php";
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>FCA PM</title>
+    <title>FCA</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,11 +58,13 @@ include "dictionary/all.php";
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <link rel="shortcut icon" type="image/png" href="/fca_pm/retail/develop2/favicon.png"/>
 
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
     <script src="js/dataTables.js" defer></script>
+    <script src="js/moment.js"></script>
+    <script src="js/datePicker.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -118,6 +120,12 @@ include "dictionary/all.php";
                             </li>
                             <li>
                                 <a href="index.php?p=urls"><i class="fa fa-fw fa-eye"></i>URLs</a>
+                            </li>
+                            <li>
+                                <a href="index.php?p=search"><i class="fa fa-fw fa-search"></i>Search</a>
+                            </li>
+                            <li>
+                                <a href="index.php?p=work_setup"><i class="fa fa-fw fa-desktop"></i>Work setup</a>
                             </li>
                         </ul>
                         <?php
@@ -188,6 +196,9 @@ include "dictionary/all.php";
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
 <?php
 	$mysqli->close();
 ?>

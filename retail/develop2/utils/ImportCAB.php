@@ -24,11 +24,13 @@
                     //echo "SELECT COUNT(*) FROM `tickets` WHERE id ='".$columnCAB[0]."' AND environment = '".$environment."'";
                     //echo $columnCAB[17];
                     if($ticketsIdCountCAB[0]==0){
-                        $sqlInsert = "INSERT into cab (rfc,environment,source_id,prod_date) values (
+                        $sqlInsert = "INSERT into cab (rfc,environment,source_id,prod_date,status,description) values (
                         " . $columnCAB[0] . ",
                         '" . $columnCAB[1] . "',
                         '" . mysqli_real_escape_string($mysqli, $columnCAB[2]) . "',
-                        '" . $columnCAB[17] . "')";
+                        '" . $columnCAB[17] . "',
+                        '" . $columnCAB[5] . "',
+                        '" . mysqli_real_escape_string($mysqli, $columnCAB[3]) . "')";
                         //echo $columnCAB[0]."<br/>";
                         //echo $sqlInsert."<br/>";
                         $resultCAB = mysqli_query($mysqli, $sqlInsert);
@@ -45,7 +47,9 @@
                         $sqlUpdate = "UPDATE cab
                         SET source_id = '" . mysqli_real_escape_string($mysqli, $columnCAB[2]) . "',
                         environment = '" . $columnCAB[1] . "',
-                        prod_date ='" . $columnCAB[17]."'
+                        prod_date ='" . $columnCAB[17]."',
+                        description='" . mysqli_real_escape_string($mysqli, $columnCAB[3]) . "',
+                        status='" . $columnCAB[5]."'
                         WHERE rfc ='".$columnCAB[0]."'";
                         //echo $columnCAB[2];
                         //echo $sqlUpdate."<br/>";

@@ -25,7 +25,7 @@
                                 echo $mantisUrl;
                              ?>view.php?id=<?php echo $row[0]; ?> target="_blank"><?php echo $row[0]; ?></a></td>
                         <td><?php echo $row[1]; ?></td>
-                        <td><?php echo $row[2]; ?></td>
+                        <td><?php echo htmlentities($row[2]); ?></td>
                         <td><?php echo $row[3]; ?></td>
                     </tr>
                     <?php

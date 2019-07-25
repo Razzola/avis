@@ -3,14 +3,15 @@
             <thead>
                 <tr>
                     <th class="th-sm">ID</th>
+                    <th class="th-sm">RFC</th>
                     <th class="th-sm">Environment</th>
-                    <th class="th-sm">Summary</th>
-                    <th class="th-sm">Severity</th>
+                    <th class="th-sm">Description</th>
+                    <th class="th-sm">Prod Date</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $stringQuery="SELECT id,environment,summary,severity FROM tickets LEFT JOIN users ON users.user=tickets.assigned_to ".$filterByType."AND groups='".$team."' AND ".$exclude_closed;
+                    $stringQuery="SELECT id,rfc,b.environment,description,prod_date FROM tickets a RIGHT JOIN cab b ON a.id=b.source_id";
                     $result = $mysqli->query($stringQuery);
                     $row = $result->fetch_row();
 
@@ -19,14 +20,15 @@
                     <tr>
                         <td><a href=
                             <?php
-                            if ($row[1]==$bugtracker)
+                            if ($row[2]==$bugtracker)
                                 echo $btUrl;
                             else
                                 echo $mantisUrl;
                              ?>view.php?id=<?php echo $row[0]; ?> target="_blank"><?php echo $row[0]; ?></a></td>
                         <td><?php echo $row[1]; ?></td>
-                        <td><?php echo htmlentities($row[2]); ?></td>
-                        <td><?php echo $row[3]; ?></td>
+                        <td><?php echo $row[2]; ?></td>
+                        <td><?php echo htmlentities($row[3]); ?></td>
+                        <td><?php echo $row[4]; ?></td>
                     </tr>
                     <?php
                         $row = $result->fetch_row();
