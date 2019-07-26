@@ -10,7 +10,7 @@
             </thead>
             <tbody>
                 <?php
-                    $stringQuery="SELECT id,environment,summary,severity FROM tickets ".$filterByType."AND assigned_to='".$user."' AND ".$exclude_closed;
+                    $stringQuery="SELECT id,environment,summary,severity FROM tickets ".$filterByType." assigned_to='".$user."' AND ".$exclude_closed;
                     $result = $mysqli->query($stringQuery);
                     $row = $result->fetch_row();
 

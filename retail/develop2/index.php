@@ -24,9 +24,9 @@ if ( isset($_GET['type']) ) {
 $mysqli = new mysqli("localhost", "root", "", "fca_pm");
 
 if($type!='All'){
-    $filterByType= "WHERE  environment='".$type."'";
+    $filterByType= "WHERE  environment='".$type."' AND";
 }else{
-    $filterByType="";
+    $filterByType="WHERE";
 }
 $root="C:/xampp/htdocs/beerecipe/retail/develop2";
 $exclude_closed=" STATUS NOT IN ('resolved','closed')";
@@ -116,10 +116,10 @@ include "dictionary/all.php";
                         </a>
                         <ul id="Discrepancy" class="collapse">
                             <li>
-                                <a href="index.php?p=discrepancy"><i class="fa fa-fw fa-eye"></i>TKT Discrepancy</a>
+                                <a href="index.php?p=discrepancy"><i class="fa fa-fw fa-exchange"></i>TKT Discrepancy</a>
                             </li>
                             <li>
-                                <a href="index.php?p=urls"><i class="fa fa-fw fa-eye"></i>URLs</a>
+                                <a href="index.php?p=urls"><i class="fa fa-fw fa-link"></i>URLs</a>
                             </li>
                             <li>
                                 <a href="index.php?p=search"><i class="fa fa-fw fa-search"></i>Search</a>

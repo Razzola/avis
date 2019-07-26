@@ -10,7 +10,7 @@
             </thead>
             <tbody>
                 <?php
-                    $stringQuery="SELECT id,environment,summary,severity FROM tickets LEFT JOIN users ON users.user=tickets.assigned_to ".$filterByType."AND groups='".$team."' AND ".$exclude_closed;
+                    $stringQuery="SELECT id,environment,summary,severity FROM tickets LEFT JOIN users ON users.user=tickets.assigned_to ".$filterByType." groups='".$team."' AND ".$exclude_closed;
                     $result = $mysqli->query($stringQuery);
                     $row = $result->fetch_row();
 

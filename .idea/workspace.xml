@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae895ebe-dc43-40f0-9b6f-fecdcd6fe5a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/retail/develop2/js/datePicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/js/moment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/work_setup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retail/develop2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/retail/develop2/work_setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="527">
               <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
             </state>
           </provider>
@@ -49,20 +43,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+            <state relative-caret-position="150">
+              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="143" selection-start-line="14" selection-start-column="143" selection-end-line="14" selection-end-column="168" />
+            <state relative-caret-position="484">
+              <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -78,7 +99,6 @@
       <find>$ticketsCount</find>
       <find>$ticketsTotal</find>
       <find>bugTra</find>
-      <find>$filterByType</find>
       <find>$mysqli</find>
       <find>!=</find>
       <find>$sqlInsert</find>
@@ -87,6 +107,8 @@
       <find>dataTables</find>
       <find>$columnCAB[10]</find>
       <find>echo</find>
+      <find>$filterByType</find>
+      <find>$envFilter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,28 +128,28 @@
         <option value="$PROJECT_DIR$/retail/develop2/js/custom.js" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupAllCounter.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupTeamCounter.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php" />
         <option value="$PROJECT_DIR$/retail/develop2/css/dataTables.css" />
         <option value="$PROJECT_DIR$/retail/develop2/index.html" />
         <option value="$PROJECT_DIR$/retail/develop2/js/dataTables.js" />
         <option value="$PROJECT_DIR$/retail/develop2/utils/downlaodCAB.php" />
         <option value="$PROJECT_DIR$/retail/develop2/home.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/discrepancy.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view.php" />
         <option value="$PROJECT_DIR$/retail/develop2/discrepancy.php" />
         <option value="$PROJECT_DIR$/retail/develop2/utils/importMantis.php" />
         <option value="$PROJECT_DIR$/retail/develop2/utils/importBugtracker.php" />
         <option value="$PROJECT_DIR$/retail/develop2/urls.php" />
         <option value="$PROJECT_DIR$/retail/develop2/search.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php" />
         <option value="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" />
         <option value="$PROJECT_DIR$/retail/develop2/js/datePicker.js" />
         <option value="$PROJECT_DIR$/retail/develop2/work_setup.php" />
         <option value="$PROJECT_DIR$/retail/develop2/js/moment.js" />
+        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" />
         <option value="$PROJECT_DIR$/retail/develop2/index.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/view.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php" />
       </list>
     </option>
   </component>
@@ -145,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,11 +218,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564078209845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564158137519" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../beerecipe" />
   </component>
   <component name="RecentsManager">
@@ -241,7 +263,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4888889" visible="true" weight="0.16364606" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4888889" visible="true" weight="0.1652452" />
       <window_info id="Structure" order="1" sideWeight="0.51111114" side_tool="true" weight="0.17377399" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -336,13 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/css/dataTables.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -407,51 +422,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupTeamCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="167" selection-start-line="37" selection-start-column="162" selection-end-line="37" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/work_setup">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="52" lean-forward="true" selection-end-line="39" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/discrepancy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/work_setup" />
     <entry file="file://$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -459,16 +430,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php">
+    <entry file="file://$PROJECT_DIR$/retail/develop2/js/moment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="143" selection-start-line="14" selection-start-column="143" selection-end-line="14" selection-end-column="168" />
+        <state relative-caret-position="78217">
+          <caret line="4601" column="5" selection-start-line="4601" selection-start-column="5" selection-end-line="4601" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/work_setup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="527">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
         </state>
       </provider>
@@ -480,17 +451,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/moment.js">
+    <entry file="file://$PROJECT_DIR$/retail/develop2/discrepancy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78217">
-          <caret line="4601" column="5" selection-start-line="4601" selection-start-column="5" selection-end-line="4601" selection-end-column="5" />
+        <state>
+          <caret selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupTeamCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="167" selection-start-line="37" selection-start-column="162" selection-end-line="37" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="143" selection-start-line="14" selection-start-column="143" selection-end-line="14" selection-end-column="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        <state relative-caret-position="150">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
