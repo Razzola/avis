@@ -61,6 +61,10 @@ include "dictionary/all.php";
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" type="image/png" href="/fca_pm/retail/develop2/favicon.png"/>
 
+    <!-- Latest compiled SELECT and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,6 +81,9 @@ include "dictionary/all.php";
 
 <script src="//code.jquery.com/jquery-3.1.1.min.js" ></script>
 <script src="js/bootstrap-datepicker.min.js"></script>
+
+<!-- Latest compiled SELECT and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
 
 
     <!-- Bootstrap Core JavaScript -->
