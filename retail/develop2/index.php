@@ -204,6 +204,7 @@ include "dictionary/all.php";
 <script src="js/custom.js"></script>
 <script src="js/dataTables.js" defer></script>
 <script src="js/moment.js"></script>
+<script src="js/mandays-utils.js"></script>
 <script src="js/datePicker.js" defer></script>
 
 <?php

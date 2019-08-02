@@ -37,15 +37,22 @@
     <div class="it-datepicker-wrapper col-sm-2">
       <div class="form-group">
       <label>Start date</label>
-        <input class="form-control date" id="startDate" type="text" placeholder="" />
+        <input class="form-control date" id="startDate" type="text" placeholder="" onchange="updateManDays()"/>
       </div>
     </div>
     <div class="it-datepicker-wrapper col-sm-2">
       <div class="form-group">
       <label>End date</label>
-        <input class="form-control date" id="endDate" type="text" placeholder="" />
+        <input class="form-control date" id="endDate" type="text" placeholder="" onchange="updateManDays()"/>
       </div>
     </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+          <label>Man Days</label>
+            <input class="form-control" id="manDays" type="text" onchange="updateEndDate()"/>
+        </div>
+    </div>
+
  </div>
 <div class="table-responsive col-lg-12 col-md-6">
         <table id="dtTable" class="table table-striped table-bordered table-sm">

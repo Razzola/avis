@@ -1,5 +1,5 @@
 $('.date').datepicker({
-    daysOfWeekDisabled: "5,6",
+    daysOfWeekDisabled: "0,6",
     todayHighlight: true,
-    toggleActive: true
+    format: "yyyy-mm-dd"
 });
