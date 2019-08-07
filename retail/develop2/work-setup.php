@@ -11,9 +11,17 @@
           $row = $result->fetch_row();
 
           while ( $row != null ) {
-
+            //code to take work periods
+            $strQueryWorkPeriod="SELECT rfc, startDate, endDate, manDays from work_period WHERE rfc = ".$row[1];
+            $wpResult = $mysqli->query($stringQuery);
+            $wpRow = $result->fetch_row();
+            $valueString=$row[1];
+            if ($wpRow[0]!=null){
+                $valueString=$row[1]."|".$wpRow[1]."|".$wpRow[2]."|".$wpRow[3];
+            }
+            ///
           ?>
-            <option value=<?php echo $row[1]; ?>><?php echo $row[1]; ?></option>
+            <option value=<?php echo $valueString; ?>><?php echo $row[1]; ?></option>
           <?php
 
           if ($row[2]==$bugtracker)
@@ -52,6 +60,10 @@
             <input class="form-control" id="manDays" type="text" onchange="updateEndDate()"/>
         </div>
     </div>
+    <div class="col-sm-2">
+            <button style="margin-top:20px;"type="submit" class="btn btn-default">Save</button>
+    </div>
+
 
  </div>
 <div class="table-responsive col-lg-12 col-md-6">

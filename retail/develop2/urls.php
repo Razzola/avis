@@ -31,13 +31,14 @@
         <li><a href="https://stage-cms.fcadealerdigitalprogram.com/content/private/support-cms.html" target="_blank">CMS CUSTOM Support</a></li>
     </ul>
     <br /><br /><br /><br /><br /><br />
-    <h2>CLONE</h2>
+    <h2>Ambiente 6.5</h2>
     <ul>
-        <li><a href="https://fca-dealer-stage-author-standard-clone.adobecqms.net" target="_blank">Author (standard) </a></li>
-        <li><a href="https://fca-dealer-stage-author-custom-clone.adobecqms.net" target="_blank">Author (custom) </a></li>
-        <li><a href="https://fca-dealer-stage-publish-clone.adobecqms.net/content/dws-it/1000_master.html" target="_blank">AEM Publish</a></li>
-        <li><a href="https://aemstagems2-www.master-it.fcagroup.it/concessionario/fiat" target="_blank">DISP Publish</a></li>
-        <li><a href="https://stage2-cms.fcadealerdigitalprogram.com/content/private/support-cms.html" target="_blank">CMS CUSTOM Support</a></li>
+        <li><a href="https://author-fca-dealer-stage65.adobecqms.net" target="_blank">Author (standard) </a></li>
+        <li><a href="https://author-custom-fca-dealer-stage65.adobecqms.net" target="_blank">Author (custom) </a></li>
+        <li><a href="https://publish1.stage.fca-dealer.adobecqms.net/content/dws-it/1000_master.html" target="_blank">AEM Publish1</a></li>
+        <li><a href="https://publish2.stage.fca-dealer.adobecqms.net/content/dws-it/1000_master.html" target="_blank">AEM Publish2</a></li>
+        <li><a href="https://aemstagems5-www.master-it.fcagroup.it/concessionario/fiat" target="_blank">DISP Publish</a></li>
+        <li><a href="https://stage5-cms.fcadealerdigitalprogram.com/content/private/support-cms.html" target="_blank">CMS CUSTOM Support</a></li>
     </ul>
     </td><td valign="top">
     <h2>AEM PROD</h2>
