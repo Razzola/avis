@@ -1,29 +1,23 @@
 var currentYear = new Date().getFullYear().toString();
 var holidayList = [currentYear.concat('-08-15'),currentYear.concat('-12-25'),currentYear.concat('-12-08'),currentYear.concat('-12-07')]; //set holidays
+var sdctrl = document.getElementById('startDate');
+var edctrl = document.getElementById('endDate');
+var rfcCtrl = document.getElementById('rfc');
+var mdctrl = document.getElementById('manDays');
+var actctrl = document.getElementById('action');
 
-function updateManDays(){
-
-	var startDate = new Date(document.getElementById('startDate').value);
-	var endDate = new Date(document.getElementById('endDate').value);
-	// To calculate the time difference of two dates
-    var Difference_In_Time = endDate.getTime() - startDate.getTime();
-
-    // To calculate the no. of days between two dates
-    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-	var manDays =  document.getElementById('manDays');
-	manDays.value=getWorkingDays(startDate,Difference_In_Days,holidayList);
-
-}
-
-function updateEndDate(){
-
-	var startDate = new Date(document.getElementById('startDate').value);
-	var endDate = document.getElementById('endDate');
-	var manDays =  document.getElementById('manDays').value;
-
-    // To calculate the no. of days between two dates
-	endDate.value=setEndDate(startDate,manDays,holidayList);
-
+// check if weekend
+function isWeekEnd(date){
+    dateObj = new Date(date);
+    if (dateObj.getDay() == 6 || dateObj.getDay() == 0) {
+        return true;
+    }else{
+        if (holidayList.contains(date)) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
 
 function setEndDate(start,manDays,holidayList){
@@ -42,39 +36,66 @@ function setEndDate(start,manDays,holidayList){
     return current;
 }
 
-
-// check if weekend
-function isWeekEnd(date){
-			dateObj = new Date(date);
-			if (dateObj.getDay() == 6 || dateObj.getDay() == 0) {
-				return true;
-			}else{
-				if (holidayList.contains(date)) {
-					return true;
-				}else{
-					return false;
-				}
-			}
-		}
-
-var getWorkingDays = function(start,endCount,holidays){
-		var weekdays = [];
-		var current = start;
-
-		var i = 0;
-		while(i < endCount){
-			if (!isWeekEnd(current)) {
-				weekdays.push(current);
-			}
-		    i++;
-			currentObj = new Date(current);
-			current = currentObj.addDays(1).format();
-		}
-
-
-
-		return weekdays.length+1;
+function updateWorkSetup(){
+	var rfc = rfcCtrl.value;
+	var rfcArray= rfc.split('|');
+	if (rfcArray.length>1){
+        sdctrl.value=rfcArray[1];
+        edctrl.value=rfcArray[2];
+        mdctrl.value=rfcArray[3];
+        actctrl.value='update';
+	}else{
+        sdctrl.value='';
+        edctrl.value='';
+        mdctrl.value='';
+        actctrl.value='insert';
 	}
+}
+
+function updateEndDate(){
+
+	var startDate = new Date(sdctrl.value);
+	var endDate = edctrl;
+	var manDays =  mdctrl.value;
+
+    // To calculate the no. of days between two dates
+	endDate.value=setEndDate(startDate,manDays,holidayList);
+
+}
+
+function updateManDays(){
+
+	var startDate = new Date(sdctrl.value);
+	var endDate = new Date(edctrl.value);
+	// To calculate the time difference of two dates
+    var Difference_In_Time = endDate.getTime() - startDate.getTime();
+
+    // To calculate the no. of days between two dates
+    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+	mdctrl.value=getWorkingDays(startDate,Difference_In_Days,holidayList);
+
+}
+
+function getWorkingDays(start,endCount,holidays){
+    var weekdays = [];
+    var current = start;
+
+    var i = 0;
+    while(i < endCount){
+        if (!isWeekEnd(current)) {
+            weekdays.push(current);
+        }
+        i++;
+        currentObj = new Date(current);
+        current = currentObj.addDays(1).format();
+    }
+
+
+
+    return weekdays.length+1;
+}
+
+
 
 
 	// check if value exist in array

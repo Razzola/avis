@@ -2,10 +2,10 @@
 
 ?>
 <div class='col-sm-12'>
-    <form role="form" action="action/update.php">
+    <form role="form" autocomplete="off" action="action/work-setup.php">
         <div class="bootstrap-select-wrapper col-sm-2">
             <label>RFC</label>
-            <select class="selectpicker" title="Scegli RFC" name="rfc">
+            <select class="selectpicker" title="Scegli RFC" name="rfc" id="rfc" onchange="updateWorkSetup()">
             <?php
               $stringQuery="SELECT id,rfc,b.environment,description,prod_date FROM tickets a RIGHT JOIN cab b ON a.id=b.source_id WHERE b.status != 'Chiuso'";
               $result = $mysqli->query($stringQuery);
@@ -14,8 +14,8 @@
               while ( $row != null ) {
                 //code to take work periods
                 $strQueryWorkPeriod="SELECT rfc, startDate, endDate, manDays from work_period WHERE rfc = ".$row[1];
-                $wpResult = $mysqli->query($stringQuery);
-                $wpRow = $result->fetch_row();
+                $wpResult = $mysqli->query($strQueryWorkPeriod);
+                $wpRow = $wpResult->fetch_row();
                 $valueString=$row[1];
                 if ($wpRow[0]!=null){
                     $valueString=$row[1]."|".$wpRow[1]."|".$wpRow[2]."|".$wpRow[3];
@@ -64,6 +64,7 @@
         <div class="col-sm-2">
                 <button style="margin-top:20px;"type="submit" class="btn btn-default">Save</button>
         </div>
+        <input type="hidden" id="action" name="action" value="insert">
     </form>
 </div>
 <div class="table-responsive col-lg-12 col-md-6">
