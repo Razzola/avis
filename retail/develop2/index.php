@@ -64,7 +64,9 @@ include "dictionary/all.php";
     <!-- Latest compiled SELECT and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
-
+    <!-- Gantt files -->
+    <link rel="stylesheet" href="http://taitems.github.com/UX-Lab/core/css/prettify.css" />
+    <link rel="stylesheet" href="css/gantt.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -206,6 +208,11 @@ include "dictionary/all.php";
 <script src="js/moment.js"></script>
 <script src="js/mandays-utils.js"></script>
 <script src="js/datePicker.js" defer></script>
+
+<!-- Gantt JS-->
+<script src="js/gantt/jquery.fn.gantt.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="http://taitems.github.com/UX-Lab/core/js/prettify.js"></script>
 
 <?php
 	$mysqli->close();

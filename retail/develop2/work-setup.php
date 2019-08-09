@@ -67,6 +67,9 @@
         <input type="hidden" id="action" name="action" value="insert">
     </form>
 </div>
+<?php
+    include "view/widgets/overall-gantt.php";
+?>
 <div class="table-responsive col-lg-12 col-md-6">
         <table id="dtTable" class="table table-striped table-bordered table-sm">
             <thead>
