@@ -32,16 +32,7 @@
         var next_friendly = "/Date(" + andTwoHours.valueOf() + ")/";
 
         $(".gantt").gantt({
-            source: [{
-                name: "Testing",
-                desc: " ",
-                values: [{
-                    from: today_friendly,
-                    to: next_friendly,
-                    label: "Test",
-                    customClass: "ganttRed"
-                }]
-            }],
+            source: "source/work-setup.php",
             scale: "hours",
             minScale: "hours",
             navigate: "scroll"
