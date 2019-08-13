@@ -1,6 +1,4 @@
-<?php
 
-?>
 <div class='col-sm-12'>
     <form role="form" autocomplete="off" action="action/work-setup.php">
         <div class="bootstrap-select-wrapper col-sm-2">
@@ -66,10 +64,16 @@
         </div>
         <input type="hidden" id="action" name="action" value="insert">
     </form>
+    <form action="action/delete-work-setup.php">
+        <div class="col-sm-2">
+                <button style="margin-top:20px;"type="submit" class="btn btn-default">Clear</button>
+        </div>
+        <input type="hidden" id="toDelete" name="toDelete" value="">
+    </form>
+    <div class="col-sm-2">
+            <a  href="index.php?p=gantt">Go to gantt >></a>
+    </div>
 </div>
-<?php
-    include "view/widgets/overall-gantt.php";
-?>
 <div class="table-responsive col-lg-12 col-md-6">
         <table id="dtTable" class="table table-striped table-bordered table-sm">
             <thead>

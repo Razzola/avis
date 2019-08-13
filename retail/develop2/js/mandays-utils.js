@@ -5,6 +5,7 @@ var edctrl = document.getElementById('endDate');
 var rfcCtrl = document.getElementById('rfc');
 var mdctrl = document.getElementById('manDays');
 var actctrl = document.getElementById('action');
+var todelete = document.getElementById('toDelete');
 
 // check if weekend
 function isWeekEnd(date){
@@ -44,6 +45,7 @@ function updateWorkSetup(){
         edctrl.value=rfcArray[2];
         mdctrl.value=rfcArray[3];
         actctrl.value='update';
+        todelete.value=rfcArray[0];
 	}else{
         sdctrl.value='';
         edctrl.value='';

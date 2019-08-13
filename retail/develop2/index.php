@@ -209,10 +209,6 @@ include "dictionary/all.php";
 <script src="js/mandays-utils.js"></script>
 <script src="js/datePicker.js" defer></script>
 
-<!-- Gantt JS-->
-<script src="js/gantt/jquery.fn.gantt.js"></script>
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="http://taitems.github.com/UX-Lab/core/js/prettify.js"></script>
 
 <?php
 	$mysqli->close();

@@ -1,49 +1,27 @@
 
 <div class="contain">
 
-    <h1>
-        jQuery.Gantt
-        <small>&mdash; Test Suite 01</small>
-    </h1>
-
-    <p>
-        <strong>Expected behaviour:</strong> Gantt bar should run from "now" until 2 hours from now. It fails when all the bars are docked left at the hour view.
-    </p>
-
-    <p>
-        <strong>Manual validation:</strong>
-        <ul>
-            <li>Passing</li>
-        </ul>
-    </p>
-
     <div class="gantt"></div>
 </div>
 <script>
 
     $(function() {
 
-        "use strict";
 
-        var today = moment();
-        var andTwoHours = moment().add("hours",2);
-
-        var today_friendly = "/Date(" + today.valueOf() + ")/";
-        var next_friendly = "/Date(" + andTwoHours.valueOf() + ")/";
 
         $(".gantt").gantt({
             source: "source/work-setup.php",
-            scale: "hours",
+            scale: "week",
             minScale: "hours",
             navigate: "scroll"
         });
 
-        $(".gantt").popover({
-            selector: ".bar",
-            title: "I'm a popover",
-            content: "And I'm the content of said popover.",
-            trigger: "hover"
-        });
+        //$(".gantt").popover({
+        //    selector: ".bar",
+        //    title: "I'm a popover",
+        //    content: "And I'm the content of said popover.",
+        //    trigger: "hover"
+        //});
 
     });
 

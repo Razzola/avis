@@ -73,7 +73,7 @@
 
 .fn-gantt .leftPanel .name {
     width: 110px;
-    font-weight: bold;
+    #font-weight: bold;
 }
 
 .fn-gantt .leftPanel .desc {
