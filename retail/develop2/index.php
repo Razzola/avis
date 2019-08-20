@@ -168,14 +168,6 @@ include "dictionary/all.php";
 
             <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Dashboard <small><?php echo $name;?></small>
-                        </h1>
-                    </div>
-                </div>
 
                 <?php
 	                $page = "home";
@@ -208,6 +200,7 @@ include "dictionary/all.php";
 <script src="js/moment.js"></script>
 <script src="js/mandays-utils.js"></script>
 <script src="js/datePicker.js" defer></script>
+<script src="js/tooltip.js" ></script>
 
 
 <?php

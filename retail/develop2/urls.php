@@ -13,7 +13,7 @@
         <li><a href="https://aemdevms-cms.fcadealerdigitalprogram.com/content/private/support-cms.html" target="_blank">CMS CUSTOM Support</a></li>
     </ul>
     <br /><br /><br /><br /><br /><br />
-    <h2>AMBIENTE 6.5</h2>
+    <h2>AEM DEV 6.5</h2>
     <ul>
         <li><a href="https://auth-dev11b2c.emea.fcagroup.com" target="_blank">Author (standard) </a></li>
         <li><a href="https://auth2-dev11b2c.emea.fcagroup.com" target="_blank">Author (custom)</a></li>
@@ -31,7 +31,7 @@
         <li><a href="https://stage-cms.fcadealerdigitalprogram.com/content/private/support-cms.html" target="_blank">CMS CUSTOM Support</a></li>
     </ul>
     <br /><br /><br /><br /><br /><br />
-    <h2>Ambiente 6.5</h2>
+    <h2>AEM STAGE 6.5</h2>
     <ul>
         <li><a href="https://author-fca-dealer-stage65.adobecqms.net" target="_blank">Author (standard) </a></li>
         <li><a href="https://author-custom-fca-dealer-stage65.adobecqms.net" target="_blank">Author (custom) </a></li>

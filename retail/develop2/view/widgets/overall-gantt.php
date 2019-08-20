@@ -13,7 +13,9 @@
             source: "source/work-setup.php",
             scale: "week",
             minScale: "hours",
-            navigate: "scroll"
+            navigate: "scroll",
+            itemsPerPage: "14",
+            dow: ["D", "L", "M", "M", "G", "V", "S"]
         });
 
         //$(".gantt").popover({
