@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae895ebe-dc43-40f0-9b6f-fecdcd6fe5a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/retail/develop2/js/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/datemanager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/gantt.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/gantt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/urls.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/urls.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/work-setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +14,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-340">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="544">
+              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -36,58 +30,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="70" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="70" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/utils/datemanager.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/js/tooltip.js">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/action/work-setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/search.php">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/js/mandays-utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="402">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -171,8 +142,6 @@
         <option value="$PROJECT_DIR$/retail/develop2/action/work-setup.php" />
         <option value="$PROJECT_DIR$/retail/develop2/js/mandays-utils.js" />
         <option value="$PROJECT_DIR$/retail/develop2/action/delete-work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php" />
         <option value="$PROJECT_DIR$/retail/develop2/work-setup.php" />
         <option value="$PROJECT_DIR$/retail/develop2/gantt.php" />
@@ -182,10 +151,12 @@
         <option value="$PROJECT_DIR$/retail/develop2/index.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="83" />
     <option name="y" value="4" />
     <option name="width" value="461" />
@@ -230,14 +201,14 @@
               <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
               <item name="retail" type="462c0819:PsiDirectoryNode" />
               <item name="develop2" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="create" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
               <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
               <item name="retail" type="462c0819:PsiDirectoryNode" />
               <item name="develop2" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
@@ -310,7 +281,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4888889" visible="true" weight="0.27238807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4888889" visible="true" weight="0.26439232" />
       <window_info id="Structure" order="1" sideWeight="0.51111114" side_tool="true" weight="0.17377399" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -548,17 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/action/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/js/mandays-utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        <state relative-caret-position="402">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -607,19 +571,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/home.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -632,13 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="807">
           <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -663,6 +609,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
           <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/action/work-setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
         </state>
       </provider>
     </entry>

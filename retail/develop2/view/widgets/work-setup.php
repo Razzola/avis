@@ -4,8 +4,8 @@
             <label>RFC</label>
             <select class="selectpicker" title="Scegli RFC" name="rfc" id="rfc" onchange="updateWorkSetup()">
             <?php
-              $stringQuery="SELECT id,b.rfc,b.environment,source_id,prod_date, startDate, endDate, manDays, description FROM tickets a  RIGHT JOIN cab b ON a.id=b.source_id  LEFT JOIN work_period c ON b.rfc=c.rfc WHERE b.status != 'Chiuso'";
-              $result = $mysqli->query($stringQuery);
+             $stringQuery="SELECT id,b.rfc,b.environment,source_id, description,prod_date,startDate, endDate, manDays FROM tickets a RIGHT JOIN cab b ON a.id=b.source_id LEFT JOIN work_period c ON b.rfc=c.rfc WHERE b.status != 'Chiuso'";
+             $result = $mysqli->query($stringQuery);
               $row = $result->fetch_row();
 
               while ( $row != null ) {
@@ -26,11 +26,11 @@
                               <td>".$row[1]."</td>
                               <td>".$row[2]."</td>
                               <td>".htmlentities($row[3])."</td>
-                              <td>".htmlentities($row[8])."</td>
-                              <td>".$row[4]."</td>
+                              <td>".htmlentities($row[4])."</td>
                               <td>".$row[5]."</td>
                               <td>".$row[6]."</td>
                               <td>".$row[7]."</td>
+                              <td>".$row[8]."</td>
                           </tr>";
                   $table_rows=$table_rows.$table_row;
                   $row = $result->fetch_row();
