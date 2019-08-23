@@ -54,6 +54,7 @@
             <h3>OVERALL</h3>
             <div class="text-center">
                 <a href="javascript:history.back()">< Back</a> ||
+                <a  href='export/excel.php'>Export to excel</a>||
                 <a  href='index.php?p=gantt<?php echo '&team='.$team;?>'>Go to gantt >></a>
             </div>
             <br/>

@@ -31,7 +31,16 @@ if($type!='All'){
 $root="C:/xampp/htdocs/beerecipe/retail/develop2";
 $exclude_closed=" STATUS NOT IN ('resolved','closed')";
 
+//All includes of inner code
 include "dictionary/all.php";
+
+
+//Session variables
+if(!session_id()) session_start();
+$stringQuery = '';
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -88,8 +97,22 @@ include "dictionary/all.php";
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+function export_to_excel() {
+    window.location.assign(window.location.href+"&export_to_excel=true")
+}
+
+function exportExcel()
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "export/excel.php", false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+</script>
 
     
     <div id="wrapper">
@@ -113,25 +136,16 @@ include "dictionary/all.php";
                 <ul class="nav navbar-nav side-nav">
                     <li>
 
-                        <a href="javascript:;" data-toggle="collapse" data-target="#Discrepancy">
-                            <i class="fa fa-fw fa-plus"></i>
-                           Tools
-                            <i class="fa fa-fw fa-caret-down"></i>
-                        </a>
-                        <ul id="Discrepancy" class="collapse">
-                            <li>
-                                <a href="index.php?p=discrepancy"><i class="fa fa-fw fa-exchange"></i>TKT Discrepancy</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=urls"><i class="fa fa-fw fa-link"></i>URLs</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=search"><i class="fa fa-fw fa-search"></i>Search</a>
-                            </li>
-                            <li>
-                                <a href="index.php?p=work-setup"><i class="fa fa-fw fa-desktop"></i>Work setup</a>
-                            </li>
-                        </ul>
+                                <a href="index.php?p=discrepancy"><i class="fa fa-fw fa-exchange"></i> TKT Discrepancy</a>
+
+                                <a href="index.php?p=urls"><i class="fa fa-fw fa-link"></i> URLs</a>
+
+                                <a href="index.php?p=search"><i class="fa fa-fw fa-search"></i> Search</a>
+
+                                <a href="index.php?p=work-setup"><i class="fa fa-fw fa-desktop"></i> Work setup</a>
+
+                                <a href="index.php?p=inner-release-note"><i class="fa fa-fw fa-space-shuttle"></i> Internal release notes</a>
+
                         <?php
                             $groups= $mysqli->query("SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups");
                             //echo "SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups";
@@ -202,8 +216,8 @@ include "dictionary/all.php";
 <script src="js/datePicker.js" defer></script>
 <script src="js/tooltip.js" ></script>
 
-
 <?php
+
 	$mysqli->close();
 ?>
 

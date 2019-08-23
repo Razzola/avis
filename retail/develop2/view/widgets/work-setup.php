@@ -11,10 +11,10 @@
               while ( $row != null ) {
                 $valueString=$row[1];
                 if ($row[7]!=null || $row[7]!=""){
-                    $valueString=$row[1]."|".$row[5]."|".$row[6]."|".$row[7];
+                    $valueString=$row[1]."|".$row[6]."|".$row[7]."|".$row[8];
                 }
               ?>
-                <option value=<?php echo $valueString; ?>><?php echo $row[1]; ?></option>
+                <option value=<?php echo $valueString; ?>><?php echo $row[1]." - ".htmlentities($row[4]); ?></option>
               <?php
 
               if ($row[2]==$bugtracker)

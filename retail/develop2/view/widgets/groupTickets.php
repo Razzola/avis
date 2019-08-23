@@ -14,6 +14,9 @@
                 <?php
                     $stringQuery="SELECT id,a.environment,summary,severity, prod_date, startDate, endDate FROM tickets a LEFT JOIN users b ON a.assigned_to=b.user LEFT JOIN cab c ON a.id=c.source_id LEFT JOIN work_period d ON c.rfc=d.rfc ".str_replace("environment", "a.environment", $filterByType)." groups='".$team."' AND a.".substr($exclude_closed, 1);
                     $result = $mysqli->query($stringQuery);
+
+
+                    $_SESSION['stringQuery'] = $stringQuery;
                     //echo $stringQuery;
                     $row = $result->fetch_row();
 
@@ -53,5 +56,4 @@
                     ?>
             </tbody>
         </table>
-
  </div>
