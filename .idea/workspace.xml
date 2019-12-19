@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae895ebe-dc43-40f0-9b6f-fecdcd6fe5a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/retail/develop2/css/print.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/js/print.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/discrepancy.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/discrepancy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retail/develop2/gantt.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/gantt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/source/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/source/work-setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/work-setup.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,44 +18,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="-663">
               <caret line="51" column="72" lean-forward="true" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/js/mandays-utils.js">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111">
-              <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+            <state relative-caret-position="1654">
+              <caret line="312" column="10" lean-forward="true" selection-start-line="312" selection-start-column="10" selection-end-line="312" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="53" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="53" />
+            <state relative-caret-position="1972">
+              <caret line="116" column="55" lean-forward="true" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/css/gantt.css">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="227" column="32" lean-forward="true" selection-start-line="227" selection-start-column="32" selection-end-line="227" selection-end-column="32" />
+            <state relative-caret-position="300">
+              <caret line="57" column="164" lean-forward="true" selection-start-line="57" selection-start-column="164" selection-end-line="58" selection-end-column="193" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/source/work-setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -65,26 +72,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/retail/develop2/gantt.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="85" selection-start-line="3" selection-start-column="85" selection-end-line="3" selection-end-column="85" />
+            <state relative-caret-position="17">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="173" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/css/print.css">
+        <entry file="file://$PROJECT_DIR$/retail/develop2/discrepancy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/js/print.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="14" column="185" selection-start-line="14" selection-start-column="185" selection-end-line="14" selection-end-column="185" />
             </state>
           </provider>
         </entry>
@@ -141,7 +139,6 @@
         <option value="$PROJECT_DIR$/retail/develop2/utils/downlaodCAB.php" />
         <option value="$PROJECT_DIR$/retail/develop2/home.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/discrepancy.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/discrepancy.php" />
         <option value="$PROJECT_DIR$/retail/develop2/utils/importMantis.php" />
         <option value="$PROJECT_DIR$/retail/develop2/utils/importBugtracker.php" />
         <option value="$PROJECT_DIR$/retail/develop2/search.php" />
@@ -170,18 +167,19 @@
         <option value="$PROJECT_DIR$/retail/develop2/utils/export-xls.php" />
         <option value="$PROJECT_DIR$/retail/develop2/export/groupTicketExcel.php" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view.php" />
         <option value="$PROJECT_DIR$/retail/develop2/export/excel.php" />
         <option value="$PROJECT_DIR$/retail/develop2/css/gantt.css" />
         <option value="$PROJECT_DIR$/retail/develop2/urls.php" />
         <option value="$PROJECT_DIR$/retail/develop2/js/mandays-utils.js" />
         <option value="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" />
         <option value="$PROJECT_DIR$/retail/develop2/source/work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/gantt.php" />
         <option value="$PROJECT_DIR$/retail/develop2/js/print.js" />
         <option value="$PROJECT_DIR$/retail/develop2/index.php" />
         <option value="$PROJECT_DIR$/retail/develop2/css/print.css" />
+        <option value="$PROJECT_DIR$/retail/develop2/gantt.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/view.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/work-setup.php" />
+        <option value="$PROJECT_DIR$/retail/develop2/discrepancy.php" />
       </list>
     </option>
   </component>
@@ -266,7 +264,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576767765515" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576773223235" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../eni" />
   </component>
   <component name="RecentsManager">
@@ -367,14 +365,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/bootstrap-datepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="286" column="32" lean-forward="true" selection-start-line="286" selection-start-column="32" selection-end-line="286" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/action/update.php" />
     <entry file="file://$PROJECT_DIR$/retail/develop2/action/work_setup.php" />
     <entry file="file://$PROJECT_DIR$/retail/develop2/js/datePicker.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -478,13 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="55" lean-forward="true" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -554,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/js/gantt/dataDays.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -572,20 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25381">
           <caret line="1499" column="39" selection-start-line="1499" selection-start-column="33" selection-end-line="1499" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/source/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="55" lean-forward="true" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -620,20 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/gantt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="85" selection-start-line="3" selection-start-column="85" selection-end-line="3" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/retail/develop2/css/gantt.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -641,10 +589,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
+    <entry file="file://$PROJECT_DIR$/retail/develop2/css/print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="51" column="72" lean-forward="true" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
+        <state relative-caret-position="493">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="52" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -655,10 +610,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/css/print.css">
+    <entry file="file://$PROJECT_DIR$/retail/develop2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="1654">
+          <caret line="312" column="10" lean-forward="true" selection-start-line="312" selection-start-column="10" selection-end-line="312" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" column="55" lean-forward="true" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="51" column="72" lean-forward="true" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="57" column="164" lean-forward="true" selection-start-line="57" selection-start-column="164" selection-end-line="58" selection-end-column="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/source/work-setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/gantt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retail/develop2/discrepancy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="185" selection-start-line="14" selection-start-column="185" selection-end-line="14" selection-end-column="185" />
         </state>
       </provider>
     </entry>

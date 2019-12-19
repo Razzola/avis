@@ -1,6 +1,7 @@
 
 <div class="text-center">
-        <a  href="index.php?p=gantt">Go to gantt >></a>
+
+                <a class="btn btn-primary" href='index.php?p=gantt' role="button"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Go to gantt</a>
 </div>
 <br/>
 <?php

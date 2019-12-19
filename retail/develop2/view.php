@@ -53,9 +53,10 @@
 
             <h3>OVERALL</h3>
             <div class="text-center">
-                <a href="javascript:history.back()">< Back</a> ||
-                <a  href='export/excel.php'>Export to excel</a>||
-                <a  href='index.php?p=gantt<?php echo '&team='.$team;?>'>Go to gantt >></a>
+
+                <button class="btn btn-primary hidden-print" onclick="javascript:history.back()"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Back</button>
+                <a class="btn btn-primary" href="export/excel.php" role="button"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Export to excel</a>
+                <a class="btn btn-primary" href='index.php?p=gantt<?php echo '&team='.$team;?>' role="button"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Go to gantt</a>
             </div>
             <br/>
                 <?php
@@ -76,7 +77,7 @@
                 ?>
 
             <div class="text-center">
-                <a href="javascript:history.back()">< Back</a>
+                <button class="btn btn-primary hidden-print" onclick="javascript:history.back()"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Back</button>
             </div>
 
          </div>

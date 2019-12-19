@@ -12,7 +12,7 @@
 
             <h3>Discrepancy</h3>
             <div class="text-center">
-                <a href="javascript:history.back()">< Back</a>
+                <button class="btn btn-primary hidden-print" onclick="javascript:history.back()"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Back</button>
             </div>
             <br/>
                 <?php
@@ -21,7 +21,7 @@
                 ?>
 
             <div class="text-center">
-                <a href="javascript:history.back()">< Back</a>
+               <button class="btn btn-primary hidden-print" onclick="javascript:history.back()"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Back</button>
             </div>
 
          </div>

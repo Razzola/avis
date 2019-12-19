@@ -1,6 +1,6 @@
 <div class="text-center">
-    <a href="javascript:history.back()"><< Back</a> ||
-    <a  href="index.php?p=work-setup">Go to Work setup >></a>
+    <button class="btn btn-primary hidden-print" onclick="javascript:history.back()"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Back</button>
+    <a class="btn btn-primary" href="index.php?p=work-setup" role="button"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Work setup</a>
     <button class="btn btn-primary hidden-print" onclick="printArea('gantt-container')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
 </div>
 <div class='col-sm-12' id="gantt-container">
@@ -9,7 +9,7 @@
     ?>
 </div>
 <div class="text-center">
-    <a href="javascript:history.back()">< Back</a>
+    <button class="btn btn-primary hidden-print" onclick="javascript:history.back()"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Back</button>
 </div>
 <!-- Gantt JS-->
 <script src="js/gantt/jquery.fn.gantt.js"></script>
