@@ -1,7 +1,7 @@
 <?php
 
     $mysqli = new mysqli("localhost", "root", "", "fca_pm");
-    $stringQuery="SELECT a.rfc, startDate, endDate, manDays, environment, source_id, description FROM work_period a LEFT JOIN cab b ON a.rfc=b.rfc";
+    $stringQuery="SELECT a.rfc, startDate, endDate, manDays, environment, source_id, description FROM work_period a LEFT JOIN cab b ON a.rfc=b.rfc WHERE endDate > DATE_ADD(CURDATE(), INTERVAL -30 DAY)";
     $result = $mysqli->query($stringQuery);
     $row = $result->fetch_row();
     $i = 0;

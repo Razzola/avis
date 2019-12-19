@@ -1,8 +1,9 @@
 <div class="text-center">
     <a href="javascript:history.back()"><< Back</a> ||
-        <a  href="index.php?p=work-setup">Go to Work setup >></a>
+    <a  href="index.php?p=work-setup">Go to Work setup >></a>
+    <button class="btn btn-primary hidden-print" onclick="printArea('gantt-container')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
 </div>
-<div class='col-sm-12'>
+<div class='col-sm-12' id="gantt-container">
      <?php
         include "view/widgets/overall-gantt.php";
     ?>

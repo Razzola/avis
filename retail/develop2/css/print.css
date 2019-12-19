@@ -1,0 +1,32 @@
+@media print {
+  .fn-gantt .bar .fn-label {
+      border-style: solid;
+      border-color:#DDD;
+      font-color:#414B57 !important;
+      text-align: left;
+      font-size: 11px;
+      padding-left: 2px;
+  }
+  .fn-gantt .dataPanel {
+      margin-left: 0px;
+      border-right: 1px solid #DDD;
+      background-image: url(../img/grid.png);
+      background-repeat: repeat;
+      background-position: 24px 24px;
+      position: relative;
+  }
+
+    .fn-gantt .bottom {
+        display:none;
+    }
+  .fn-gantt .leftPanel {
+        width: 145px;
+    }
+  body{
+    padding:20px;
+  }
+}
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+}

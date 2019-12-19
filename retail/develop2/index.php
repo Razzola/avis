@@ -76,6 +76,7 @@ $stringQuery = '';
     <!-- Gantt files -->
     <link rel="stylesheet" href="http://taitems.github.com/UX-Lab/core/css/prettify.css" />
     <link rel="stylesheet" href="css/gantt.css" />
+    <link rel="stylesheet" href="css/print.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -215,6 +216,7 @@ function exportExcel()
 <script src="js/mandays-utils.js"></script>
 <script src="js/datePicker.js" defer></script>
 <script src="js/tooltip.js" ></script>
+<script src="js/print.js" ></script>
 
 <?php
 
