@@ -87,6 +87,7 @@
         <li><a href="https://prod.teamgantt.com/gantt/schedule/?ids=1497483&public_keys=antZYm90BjwC&zoom=d100&font_size=12&estimated_hours=0&assigned_resources=0&percent_complete=0&documents=0&comments=0&col_width=355&hide_header_tabs=0&menu_view=1&resource_filter=1&name_in_bar=0&name_next_to_bar=0&resource_names=1#user=&company=&custom=&date_filter=&hide_completed=false&color_filter=&ids=1497483" target="_blank">GANTT</a></li>
         <li><a href="https://d2vi277bhg6pqg.cloudfront.net/index.html" target="_blank">FreeSpee Assessment</a></li>
         <li><a href="https://ictselfcare.fiatgroup.com" target="_blank">FreeSpee Assessment</a></li>
+        <li><a href="https://cert_www_fiat_it_preview.carconfigurator.fcagroup.it/configuratore/" target="_blank">Car Configurator TBI</a></li>
     </ul>
     </td><td valign="top">
     <h2>GODCS</h2>
@@ -104,6 +105,7 @@
         <li><a href="https://docs.google.com/document/d/1W6okjA8Jcd8dBt0ReCNkNFvfgne33sULpYCrx6pJXhw/edit#heading=h.lja7jdp6jykf" target="_blank">BIV</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1psNbnlBntQ5h3bUgKCmUPpN-y1ZOwBt2EJs2cf4T8wc/edit#gid=0" target="_blank">DDA most important pages</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1gOmmA7zBiz-NIAJ7Z8r1sAfitTAik6dft22D8YzMTpA/edit#gid=0" target="_blank">DDP - Domain DNS</a></li>
+		<li><a href="https://docs.google.com/spreadsheets/d/1I_pk0p_VbRr1T2i2YBGpm9rgU_Eb1GOIXtdhVoc9OKI/edit#gid=1334378407" target="_blank">Ferie DWS</a></li>
     </ul>
     <h2>UX</h2>
     <ul>

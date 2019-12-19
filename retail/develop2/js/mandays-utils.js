@@ -1,5 +1,5 @@
 var currentYear = new Date().getFullYear().toString();
-var holidayList = [currentYear.concat('-08-15'),currentYear.concat('-12-25'),currentYear.concat('-12-08'),currentYear.concat('-12-07')]; //set holidays
+var holidayList = [currentYear.concat('-08-15'),currentYear.concat('-12-24'),currentYear.concat('-01-06'),currentYear.concat('-12-25'),currentYear.concat('-12-08'),currentYear.concat('-12-07')]; //set holidays
 var sdctrl = document.getElementById('startDate');
 var edctrl = document.getElementById('endDate');
 var rfcCtrl = document.getElementById('rfc');
@@ -95,6 +95,14 @@ function getWorkingDays(start,endCount,holidays){
 
 
     return weekdays.length+1;
+}
+
+
+function preFillWorkSetup(id){
+    console.log(id);
+    $('.selectpicker').selectpicker('val', id);
+    updateWorkSetup();
+    console.log(rfcCtrl.value);
 }
 
 

@@ -37,6 +37,7 @@
                         $firstRow="SELECT a.USER,".$firstRow." FROM ";
                         $totTicketsByType="(SELECT a.user AS USER, COUNT(*) AS TOTAL FROM users a RIGHT JOIN tickets b ON a.user=b.assigned_to  WHERE a.groups='".$team."' ".$envFilter." AND ".$exclude_closed." GROUP BY a.user) a";
                         $ultimateQuery=$firstRow.$totTicketsByType.$macroQuery;
+
                         $result = $mysqli->query($ultimateQuery);
                         $row = $result->fetch_row();
 

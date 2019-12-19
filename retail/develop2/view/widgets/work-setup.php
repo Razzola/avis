@@ -23,7 +23,7 @@
                   $direction =  $mantisUrl;
               //building table rows
               $table_row="<tr><td><a href='".$direction."view.php?id=".$row[0]."' target='_blank'>".$row[0]."</a></td>
-                              <td>".$row[1]."</td>
+                              <td><a href=# onclick=preFillWorkSetup('".$valueString."')>".$row[1]."</a></td>
                               <td>".$row[2]."</td>
                               <td>".htmlentities($row[3])."</td>
                               <td>".htmlentities($row[4])."</td>
