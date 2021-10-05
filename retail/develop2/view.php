@@ -12,6 +12,9 @@
             case 'BT':
                 $name = 'BugTracker';
                 break;
+            case 'IC':
+                $name = 'IceCrum';
+                break;
             case 'All':
                 $name= 'All';
                 break;

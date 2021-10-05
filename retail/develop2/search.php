@@ -10,7 +10,7 @@
                <i class="fa fa-arrow-circle-right"></i></a>
         </div--!>
 
-            <h3>Discrepancy</h3>
+            <h3>Search</h3>
             <div class="text-center">
                 <a href="javascript:history.back()">< Back</a>
             </div>

@@ -1,670 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae895ebe-dc43-40f0-9b6f-fecdcd6fe5a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/retail/develop2/discrepancy.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/discrepancy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/gantt.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/gantt.php" afterDir="false" />
+    <list default="true" id="49bedf95-1b46-4776-99dd-be449c1b9ef0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/retail/develop2/cost-management-sprint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/cost-management.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/export/cabDiscrepancy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/export/cabEnricher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/sprint-monitoring.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/amountPerStory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/amountValueEffortPerSprint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/checkError.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/dbConnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISSprints.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISStories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISTasks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISUsers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importIceScrum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/sprintUtilities.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/workDays.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costAllSprints.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costAllStories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costPerSprint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costPerStory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/dashboardPerSprint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fca-pm-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/dictionary/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/dictionary/all.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/export/groupTicketExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/export/groupTicketExcel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/source/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/source/work-setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/urls.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/urls.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retail/develop2/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/work-setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-663">
-              <caret line="51" column="72" lean-forward="true" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1654">
-              <caret line="312" column="10" lean-forward="true" selection-start-line="312" selection-start-column="10" selection-end-line="312" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="116" column="55" lean-forward="true" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="57" column="164" lean-forward="true" selection-start-line="57" selection-start-column="164" selection-end-line="58" selection-end-column="193" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/source/work-setup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/gantt.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="173" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/retail/develop2/discrepancy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="185" selection-start-line="14" selection-start-column="185" selection-end-line="14" selection-end-column="185" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>$ticketsTotal</find>
-      <find>bugTra</find>
-      <find>$mysqli</find>
-      <find>!=</find>
-      <find>$sqlInsert</find>
-      <find>new mysqli</find>
-      <find>custom.js</find>
-      <find>dataTables</find>
-      <find>$columnCAB[10]</find>
-      <find>echo</find>
-      <find>$filterByType</find>
-      <find>$envFilter</find>
-      <find>morris</find>
-      <find>jque</find>
-      <find>daysAhead</find>
-      <find>endCount</find>
-      <find>holidays</find>
-      <find>dayOf</find>
-      <find>dayOfWeek</find>
-      <find>top</find>
-      <find>document.getElementById('startDate')</find>
-      <find>getWorkingDays</find>
-      <find>jquery</find>
-      <find>2019</find>
-      <find>Testing</find>
-      <find>source</find>
-      <find>values</find>
-      <find>next_friendly</find>
-      <find>.fn-gantt .day</find>
-      <find>.fn-gantt .bar .fn-label</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupBTCounter.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/dictionary/all.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupAllCounter.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupTeamCounter.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/css/dataTables.css" />
-        <option value="$PROJECT_DIR$/retail/develop2/index.html" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/dataTables.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/utils/downlaodCAB.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/home.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/discrepancy.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/utils/importMantis.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/utils/importBugtracker.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/search.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/moment.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/userTickets.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/work_setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/action/update.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/datePicker.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/custom.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/source/work-setup.json" />
-        <option value="$PROJECT_DIR$/retail/develop2/source/mock.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/action/delete.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/action/work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/action/delete-work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/tooltip.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/inner-release-note.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/release-note.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/css/print-grid.css" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/excel-export.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/utils/export-xls.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/export/groupTicketExcel.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/export/excel.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/css/gantt.css" />
-        <option value="$PROJECT_DIR$/retail/develop2/urls.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/mandays-utils.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/source/work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/js/print.js" />
-        <option value="$PROJECT_DIR$/retail/develop2/index.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/css/print.css" />
-        <option value="$PROJECT_DIR$/retail/develop2/gantt.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/view.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/work-setup.php" />
-        <option value="$PROJECT_DIR$/retail/develop2/discrepancy.php" />
-      </list>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="y" value="4" />
-    <option name="width" value="461" />
-    <option name="height" value="330" />
-  </component>
+  <component name="ProjectId" id="1riGeLL89u1JBWBXsDEexCVAads" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="retail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="retail" type="462c0819:PsiDirectoryNode" />
-              <item name="develop2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="retail" type="462c0819:PsiDirectoryNode" />
-              <item name="develop2" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="retail" type="462c0819:PsiDirectoryNode" />
-              <item name="develop2" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="retail" type="462c0819:PsiDirectoryNode" />
-              <item name="develop2" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="retail" type="462c0819:PsiDirectoryNode" />
-              <item name="develop2" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fca_pm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fca_pm" type="462c0819:PsiDirectoryNode" />
-              <item name="retail" type="462c0819:PsiDirectoryNode" />
-              <item name="develop2" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576773223235" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eni" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/retail/develop2/utils" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\fca_pm\retail\develop2" />
-      <recent name="C:\xampp\htdocs\fca_pm\retail\develop2\view" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\fca_pm\retail\develop2\export" />
-      <recent name="C:\xampp\htdocs\fca_pm\retail\develop2\view\widgets" />
+      <recent name="C:\xampp\htdocs\avis\retail\develop2\utils" />
+      <recent name="C:\xampp\htdocs\avis\retail\develop2\view\widgets" />
+      <recent name="C:\xampp\htdocs\avis\retail\develop2" />
+      <recent name="C:\xampp\htdocs\avis\retail\develop2\export" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae895ebe-dc43-40f0-9b6f-fecdcd6fe5a6" name="Default Changelist" comment="" />
-      <created>1549903517602</created>
+      <changelist id="49bedf95-1b46-4776-99dd-be449c1b9ef0" name="Default Changelist" comment="" />
+      <created>1619451590926</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1549903517602</updated>
+      <updated>1619451590926</updated>
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4888889" visible="true" weight="0.29104477" />
-      <window_info id="Structure" order="1" sideWeight="0.51111114" side_tool="true" weight="0.17377399" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4888889" visible="true" weight="0.15671642" />
-      <window_info id="Structure" order="1" sideWeight="0.51111114" side_tool="true" weight="0.17377399" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/retail/develop2/action/work_setup.php" />
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/datePicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/css/bootstrap-datepicker3.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt" />
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/gantt/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/gantt/dataHours.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="122" selection-start-line="17" selection-start-column="122" selection-end-line="17" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/create/ingredients.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/action/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/source/work-setup.json" />
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/ticketsCab.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/source/mock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/gantt/jquery.fn.gantt.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/action/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/action/delete-work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupTeamCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="167" selection-start-line="37" selection-start-column="162" selection-end-line="37" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/tooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/utils/datemanager.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/inner-release-note.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/release-note.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/css/print-grid.css" />
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/excel-export.js" />
-    <entry file="file://$PROJECT_DIR$/retail/develop2/utils/export-xls.php" />
-    <entry file="file://$PROJECT_DIR$/retail/develop2/export/groupTicketExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="59" lean-forward="true" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/export/excel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/gantt/dataDaysEnh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="1" column="16673" selection-start-line="1" selection-start-column="16673" selection-end-line="1" selection-end-column="16673" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/urls.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="82" column="100" selection-start-line="82" selection-start-column="100" selection-end-line="82" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/action/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/gantt/dataDays.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/gantt/jquery.fn.gantt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25381">
-          <caret line="1499" column="39" selection-start-line="1499" selection-start-column="33" selection-end-line="1499" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/moment.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/groupTickets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-resume.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/mandays-utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/css/gantt.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="227" column="32" lean-forward="true" selection-start-line="227" selection-start-column="32" selection-end-line="227" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/css/print.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view/widgets/overall-gantt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/js/print.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1654">
-          <caret line="312" column="10" lean-forward="true" selection-start-line="312" selection-start-column="10" selection-end-line="312" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="55" lean-forward="true" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <caret line="51" column="72" lean-forward="true" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="57" column="164" lean-forward="true" selection-start-line="57" selection-start-column="164" selection-end-line="58" selection-end-column="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/source/work-setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/gantt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail/develop2/discrepancy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="185" selection-start-line="14" selection-start-column="185" selection-end-line="14" selection-end-column="185" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

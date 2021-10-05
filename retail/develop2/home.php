@@ -2,13 +2,13 @@
     include "dictionary/all.php";
 
 
-	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE environment='Mantis'AND".$exclude_closed);
+	$result = $GLOBALS['mysqli']->query("SELECT COUNT(*) FROM `cab` WHERE environment='IceScrum'");
 	$ticketsCount = $result->fetch_row();
-	$ticketsMantisTotal = $ticketsCount[0];
+	$ticketsICTotal = $ticketsCount[0];
 
-	$result = $mysqli->query("SELECT COUNT(*) FROM `tickets` WHERE environment='BugTracker' AND".$exclude_closed);
+	$result = $GLOBALS['mysqli']->query("SELECT COUNT(*) FROM `cab` WHERE environment!='IceScrum'");
 	$ticketsCount = $result->fetch_row();
-	$ticketsBTTotal = $ticketsCount[0];
+	$ticketsNICTotal = $ticketsCount[0];
 ?>
 
 <div class="row">
@@ -20,8 +20,8 @@
                         <i class="fa fa-database fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge"><?php echo $ticketsMantisTotal; ?></div>
-                        <div>Mantis</div>
+                        <div class="huge"><?php echo $ticketsICTotal; ?></div>
+                        <div>IceScrum</div>
                     </div>
                 </div>
             </div>
@@ -42,8 +42,8 @@
                         <i class="fa fa-database fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge"><?php echo $ticketsBTTotal; ?></div>
-                        <div>BugTracker</div>
+                        <div class="huge"><?php echo $ticketsNICTotal; ?></div>
+                        <div>Others</div>
                     </div>
                 </div>
             </div>
@@ -61,15 +61,15 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-database fa-5x"></i>
+                        <i class="fa fa-dashboard fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge"><?php echo $ticketsMantisTotal+$ticketsBTTotal; ?></div>
-                        <div>Total</div>
+                        <div class="huge"><?php echo ""; ?></div>
+                        <div>Go to</div>
                     </div>
                 </div>
             </div>
-            <a href="index.php?p=view&type=<?php echo $all;?>">
+            <a href="index.php?p=sprint-monitoring">
                 <div class="panel-footer">
                     <span class="pull-left">View Details</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -78,7 +78,7 @@
             </a>
         </div>
     </div>
-    <form class="col-lg-3 col-md-6" action="" method="post" name="uploadCSV"
+    <!-- form class="col-lg-3 col-md-6" action="" method="post" name="uploadCSV"
         enctype="multipart/form-data">
         <div class="input-row">
             <h4>Choose Mantis CSV</h4>
@@ -90,9 +90,9 @@
 
         </div>
         <div id="labelError"></div>
-    </form>
+    </form -->
 
-    <form class="col-lg-3 col-md-6" action="" method="post" name="uploadCSV"
+    <!-- form class="col-lg-3 col-md-6" action="" method="post" name="uploadCSV"
         enctype="multipart/form-data">
         <div class="input-row">
             <h4>Choose BT CSV</h4>
@@ -104,8 +104,21 @@
 
         </div>
         <div id="labelError"></div>
-    </form>
+    </form -->
 
+    <form class="col-lg-3 col-md-6" action="" method="post" name="uploadXML"
+        enctype="multipart/form-data">
+        <div class="input-row">
+            <h4>Choose IS XML</h4>
+            <input
+                type="file" name="fileIS" id="fileIS" accept=".xml">
+            <button type="submit" id="submit" name="importIS"
+                class="btn btn-primary">Import</button>
+            <br />
+
+        </div>
+        <div id="labelError"></div>
+    </form>
 
     <form class="col-lg-3 col-md-6" action="" method="post" name="uploadCSV"
         enctype="multipart/form-data">
@@ -126,5 +139,6 @@
         include "utils/importMantis.php";
         include "utils/importBugTracker.php";
         include "utils/importCAB.php";
+        include "utils/importIceScrum.php";
     ?>
 </div>

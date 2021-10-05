@@ -4,7 +4,11 @@
             <label>RFC</label>
             <select class="selectpicker" title="Scegli RFC" name="rfc" id="rfc" onchange="updateWorkSetup()">
             <?php
-             $stringQuery="SELECT id,b.rfc,b.environment,source_id, description,prod_date,startDate, endDate, manDays FROM tickets a RIGHT JOIN cab b ON a.id=b.source_id LEFT JOIN work_period c ON b.rfc=c.rfc WHERE b.status != 'Chiuso'";
+             $stringQuery="SELECT id,b.rfc,b.environment,source_id, description,prod_date,startDate, endDate, manDays
+                            FROM tickets a
+                            RIGHT JOIN cab b ON a.id=b.source_id
+                            LEFT JOIN work_period c ON b.rfc=c.rfc
+                            WHERE b.status != 'Chiuso'";
              $result = $mysqli->query($stringQuery);
               $row = $result->fetch_row();
 

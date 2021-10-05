@@ -1,6 +1,15 @@
 <?php
-   $filename = 'export.xls';
-   $stringQuery="SELECT id,a.environment,summary,severity, prod_date, startDate, endDate FROM tickets a LEFT JOIN users b ON a.assigned_to=b.user LEFT JOIN cab c ON a.id=c.source_id LEFT JOIN work_period d ON c.rfc=d.rfc ";
+   include "../utils/dbConnect.php";
+   $filename = 'cabDiscrepancy.xls';
+   $stringQuery="SELECT * FROM(
+                 SELECT order_number as 'sprint_id', a.id as 'task_id'
+                 from tasks a
+                 JOIN sprint b ON a.sprint_id=b.id
+                 UNION ALL
+                 SELECT sprint_id,task_id from cab where status!= 'Rejected') tbl
+                 GROUP BY task_id
+                 HAVING count(*) >= 3
+                 ORDER BY task_id";
    $result = $GLOBALS['mysqli']->query($stringQuery);
 
    $columnHeader = '';
@@ -28,5 +37,5 @@
    header("Pragma: no-cache");
    header("Expires: 0");
 
-     echo ucwords($columnHeader) . "\n" . $setData . "\n";*/
+     echo ucwords($columnHeader) . "\n" . $setData . "\n";
 ?>
