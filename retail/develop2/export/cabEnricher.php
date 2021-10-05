@@ -1,7 +1,7 @@
 <?php
    include "../utils/dbConnect.php";
    $filename = 'cabEnricher.xls';
-   $stringQuery="SELECT b.environment,story_id,b.id,c.summary, b.summary, CONCAT('Sprint ',order_number), '',b.effort,'', CONCAT(SUBSTRING(firstname, 1, 1),SUBSTRING(lastname, 1, 1)),'','',b.impact
+   $stringQuery="SELECT b.environment,story_id,b.id,c.summary, b.summary, CONCAT('Sprint ',order_number), '',REPLACE(b.effort, '.', ','),'', CONCAT(SUBSTRING(firstname, 1, 1),SUBSTRING(lastname, 1, 1)),'','',b.impact
                                                    FROM sprint a
                                                    RIGHT JOIN tasks b ON b.sprint_id=a.id
                                                    LEFT JOIN tickets c ON b.story_id=c.id

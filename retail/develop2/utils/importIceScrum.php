@@ -15,6 +15,8 @@
 
             $xml = simplexml_load_file($fileNameIS) or die("Error: Cannot create object");
             $i=0;
+
+            import_users($xml->project->teams->team->members);
             foreach($xml->project->releases->release->sprints->sprint as $sprint)
             {
                 $sprint_id=$sprint->attributes()->id;
@@ -78,7 +80,7 @@
                         updateTask($story_id,$task, NULL);
                 }
             }
-            import_users($xml->project->teams->team->members);
+            echo "pippo";
 
         }
     }

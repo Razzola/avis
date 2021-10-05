@@ -157,32 +157,7 @@ function exportExcel()
                                 <a href="index.php?p=cost-management-sprint"><i class="fa fa-fw fa-dollar"></i>Sprint Costs</a>
                                 <a href="index.php?p=sprint-monitoring"><i class="fa fa-fw fa-dashboard"></i>Sprint Monitoring</a>
 
-                        <?php
-                            $groups= $mysqli->query("SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups");
-                            //echo "SELECT groups FROM users RIGHT JOIN tickets ON users.user=tickets.assigned_to WHERE ".$exclude_closed." GROUP BY groups";
-                            $group = $groups->fetch_row();
-                            while ( $group  != null ) {
-                            ?>
-                                <a href="javascript:;" data-toggle="collapse" data-target="#<?php echo $group[0]?>">
-                                    <i class="fa fa-fw fa-folder"></i>
-                                    <?php echo $group[0]?>
-                                    <i class="fa fa-fw fa-caret-down"></i>
-                                </a>
-                                <ul id="<?php echo $group[0]?>" class="collapse">
-                                    <li>
-                                        <a href="index.php?p=view&amp;type=<?php echo $all?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $all?></a>
-                                    </li>
-                                    <li>
-                                        <a href="index.php?p=view&amp;type=<?php echo $mantis?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $mantis?></a>
-                                    </li>
-                                    <li>
-                                        <a href="index.php?p=view&amp;type=<?php echo $bugtracker?>&amp;team=<?php echo $group[0]?>&amp;perimeter=Group"><i class="fa fa-fw fa-eye"></i><?php echo $bugtracker?></a>
-                                    </li>
-                                </ul>
-                         <?php
-                            $group = $groups->fetch_row();
-                            }
-                        ?>
+
 
                 </ul>
             </div>

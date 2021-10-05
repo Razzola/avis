@@ -2,43 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49bedf95-1b46-4776-99dd-be449c1b9ef0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/retail/develop2/cost-management-sprint.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/cost-management.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/export/cabDiscrepancy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/export/cabEnricher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/sprint-monitoring.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/amountPerStory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/amountValueEffortPerSprint.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/checkError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/dbConnect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISSprints.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISStories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISTasks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importISUsers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/importIceScrum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/sprintUtilities.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/utils/workDays.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costAllSprints.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costAllStories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costPerSprint.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/costPerStory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/dashboardPerSprint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fca-pm-project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/dictionary/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/dictionary/all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/export/groupTicketExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/export/groupTicketExcel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/export/cabEnricher.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/export/cabEnricher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retail/develop2/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/source/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/source/work-setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/urls.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/urls.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/utils/ImportCAB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/view/widgets/work-setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/utils/importISUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/utils/importISUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retail/develop2/utils/importIceScrum.php" beforeDir="false" afterPath="$PROJECT_DIR$/retail/develop2/utils/importIceScrum.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +35,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/retail/develop2/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

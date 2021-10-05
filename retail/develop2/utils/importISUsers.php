@@ -13,13 +13,13 @@
 
 
           function insertUsers($user){
-                         $sqlInsert = "INSERT into users (uid,id,firstname,lastname, user) values (
+                         $sqlInsert = "INSERT into users (uid,id,firstname,lastname, username) values (
                          '" . $user->attributes()->uid . "',
                          '" . $user->id . "',
                          '" . $user->firstName . "',
                          '" . $user->lastName . "',
                          '" . $user->username . "')";
-                         //echo $sqlInsert."<br/>";
+                         echo $sqlInsert."<br/>";
                          $resultISTask = mysqli_query($GLOBALS['mysqli'], $sqlInsert);
 
                          check_error($resultISTask);
@@ -45,8 +45,9 @@
                 foreach($users->user as $user)
                 {
                     $user_id=$user->attributes()->uid;
-                    if(!checkExistingUsers($user_id))
+                    if(!checkExistingUsers($user_id)){
                         insertUsers($user);
+                        }
                     else
                         updateUsers($user);
                 }
